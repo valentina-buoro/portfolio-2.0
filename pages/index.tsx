@@ -1,21 +1,12 @@
 import React from "react"
 import { GetStaticProps } from "next"
 import Layout from "../components/Layout"
-import Post, { PostProps } from "../components/Post"
+import Post from "../components/Post"
+import { PostProps } from "../types/types"
+import {feed} from "../data/blog-data"
 
 export const getStaticProps: GetStaticProps = async () => {
-  const feed = [
-    {
-      id: "1",
-      title: "Prisma is the perfect ORM for Next.js",
-      content: "[Prisma](https://github.com/prisma/prisma) and Next.js go _great_ together!",
-      published: false,
-      author: {
-        name: "Nikolas Burk",
-        email: "burk@prisma.io",
-      },
-    },
-  ]
+  
   return { 
     props: { feed }, 
     revalidate: 10 

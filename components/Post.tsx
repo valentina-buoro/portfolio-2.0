@@ -1,8 +1,9 @@
 import React from "react";
 import Router from "next/router";
 import ReactMarkdown from "react-markdown";
+import { PostProps } from "../types/types";
 
-export type PostProps = {
+/*export type PostProps = {
   id: string;
   title: string;
   author: {
@@ -11,7 +12,7 @@ export type PostProps = {
   } | null;
   content: string;
   published: boolean;
-};
+};*/
 
 const Post: React.FC<{ post: PostProps }> = ({ post }) => {
   const authorName = post.author ? post.author.name : "Unknown author";
