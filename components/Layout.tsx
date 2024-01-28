@@ -1,15 +1,33 @@
 import React, { ReactNode } from "react";
 import Header from "./Header";
+import Profilebar from "./Profilebar";
+import Navbar from "./Navbar";
 
 type Props = {
   children: ReactNode;
 };
 
 const Layout: React.FC<Props> = (props) => (
-  <div>
-    <Header />
-    <div className="layout">{props.children}</div>
-    <style jsx global>{`
+  
+    <div className=" h-screen flex flex-col bg-black">
+      <Profilebar />
+      <main className="md:ml-[21rem] md:mr-[4.375rem] z-10 ">
+        {/* Main content goes here */}
+        {props.children}
+        {/* Add your main content */}
+      </main>
+      <Navbar />
+    </div>
+  
+
+    
+
+);
+
+export default Layout;
+
+
+{/* <style jsx global>{`
       html {
         box-sizing: border-box;
       }
@@ -43,8 +61,4 @@ const Layout: React.FC<Props> = (props) => (
       .layout {
         padding: 0 2rem;
       }
-    `}</style>
-  </div>
-);
-
-export default Layout;
+    `}</style>*/}
