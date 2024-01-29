@@ -8,3 +8,9 @@ export type PostProps = {
     content: string;
     published: boolean;
   };
+
+  export type CardProps = {
+   text: string;
+    title: string;
+   src: string
+  };

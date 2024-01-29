@@ -9,7 +9,7 @@ type Props = {
 
 const Layout: React.FC<Props> = (props) => (
   
-    <div className=" h-screen flex flex-col bg-black">
+    <div className=" h-full flex flex-col bg-black ">
       <Profilebar />
       <main className="md:ml-[21rem] md:mr-[4.375rem] z-10 ">
         {/* Main content goes here */}

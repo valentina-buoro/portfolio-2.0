@@ -60,7 +60,7 @@ const socialRoutes = [
 
 const Navbar: React.FC = () => {
   return (
-    <nav className=" hidden md:flex flex-col bg-[#18151B] h-full w-[4.375rem] fixed top-0 right-0 overflow-y-auto shadow-sm">
+    <nav className=" hidden md:flex flex-col bg-[#18151B] h-full w-[4.1rem] fixed top-0 right-0 overflow-y-auto shadow-sm">
        <div className="flex flex-col gap-y-9 items-center mt-9">
         {socialRoutes.map((route, index) => {
           return (

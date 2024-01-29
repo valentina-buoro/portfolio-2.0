@@ -4,6 +4,11 @@ import Layout from "../components/Layout";
 import Post from "../components/Post";
 import { PostProps } from "../types/types";
 import { feed } from "../data/blog-data";
+import Projects from "../components/sections/Projects";
+import Hero from "../components/sections/Hero";
+import Techstack from "../components/sections/Techstack";
+import Services from "../components/sections/Services";
+import Contact from "../components/sections/Contact";
 
 export const getStaticProps: GetStaticProps = async () => {
   return {
@@ -19,33 +24,11 @@ type Props = {
 const Blog: React.FC<Props> = (props) => {
   return (
     <Layout>
-      <div className="w-full h-screen flex flex-col bg-green-500">
-        <h1>Public Feed</h1>
-        <h1 className="text-3xl font-bold underline text-red-500">
-          Hello world!
-        </h1>
-        <main>
-          {props.feed.map((post) => (
-            <div key={post.id} className="post">
-              <Post post={post} />
-            </div>
-          ))}
-        </main>
-      </div>
-      <style jsx>{`
-        .post {
-          background: white;
-          transition: box-shadow 0.1s ease-in;
-        }
-
-        .post:hover {
-          box-shadow: 1px 1px 3px #aaa;
-        }
-
-        .post + .post {
-          margin-top: 2rem;
-        }
-      `}</style>
+      <Hero/>
+     <Projects/>
+     <Techstack/>
+     <Services/>
+     <Contact/>
     </Layout>
   );
 };
