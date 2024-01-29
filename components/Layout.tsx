@@ -11,7 +11,7 @@ const Layout: React.FC<Props> = (props) => (
   
     <div className=" h-full flex flex-col bg-black ">
       <Profilebar />
-      <main className="md:ml-[21rem] md:mr-[4.375rem] z-10 ">
+      <main className="md:ml-[21rem] md:mr-[4.375rem] z-10 bg-[#18151B] ">
         {/* Main content goes here */}
         {props.children}
         {/* Add your main content */}
