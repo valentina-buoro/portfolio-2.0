@@ -1,4 +1,5 @@
 import React from "react";
+import Slider from "react-slick";
 import Image from "next/image";
 import HtmlIcon from "../../public/htmlIcon.svg";
 import CssIcon from "../../public/css.svg";
@@ -30,17 +31,17 @@ const frontendIcons = [
 ];
 
 const Techstack = () => {
+ 
   return (
-    <div className="px-20">
-      <div className="text-center">
+    <div className="px-20 h-[90vh] flex flex-col justify-center mt-auto">
+      <div className="text-center my-6">
         <p className="text-4xl font-semibold text-[#F9FAFB]">My Tech Stacks</p>
       </div>
-
       <div className="mb-8">
       <div className="text-center">
-        <p className="text-2xl font-semibold text-[#F9FAFB]">Frontend Development</p>
+        <p className="text-xl my-2 font-semibold text-[#F9FAFB]">Frontend Development</p>
       </div>
-      <div className="flex gap-x-5 justify-between scroll-content animate-marquee">
+      <div className="flex gap-x-5 justify-between">
         {frontendIcons.map((icon, index) => {
           return (
             <div
@@ -59,9 +60,9 @@ const Techstack = () => {
       </div>
       <div className="mb-8">
       <div className="text-center">
-        <p className="text-2xl font-semibold text-[#F9FAFB]">Mobile Development</p>
+        <p className="text-xl mb-2 font-semibold text-[#F9FAFB]">Mobile Development</p>
       </div>
-      <div className="flex gap-x-5 justify-between scroll-content animate-marquee">
+      <div className="flex gap-x-5 justify-between">
         {frontendIcons.map((icon, index) => {
           return (
             <div
@@ -80,9 +81,9 @@ const Techstack = () => {
       </div>
       <div className="">
       <div className="text-center">
-        <p className="text-2xl font-semibold text-[#F9FAFB]">Backend Development</p>
+        <p className="text-xl mb-2 font-semibold text-[#F9FAFB]">Backend Development</p>
       </div>
-      <div className="flex gap-x-5 justify-between scroll-content animate-marquee">
+      <div className="flex gap-x-5 justify-between">
         {frontendIcons.map((icon, index) => {
           return (
             <div
@@ -97,7 +98,7 @@ const Techstack = () => {
           );
         })}
       </div>
-
+      <hr className="lg:mt-24 mt-14 opacity-10" />
       </div>
       {/*8<style jsx>{`
         @keyframes marquee {
@@ -119,6 +120,7 @@ const Techstack = () => {
           float: inline-start; 
         }
       `}</style>*/}
+      
     </div>
   );
 };

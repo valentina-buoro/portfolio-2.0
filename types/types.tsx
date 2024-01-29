@@ -14,3 +14,9 @@ export type PostProps = {
     title: string;
    src: string
   };
+  export type ProjectProps = {
+    img: string;
+    title: string;
+    description: string;
+   
+  }

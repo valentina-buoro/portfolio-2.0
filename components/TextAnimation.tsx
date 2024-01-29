@@ -1,6 +1,8 @@
 import React from 'react'
 
+
 const TextAnimation = () => {
+  
   return (
    <>
    <div className="flex flex-col justify-center">

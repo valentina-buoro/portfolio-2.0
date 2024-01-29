@@ -11,7 +11,7 @@ const Hero = () => {
 
       <div className="background-image">
         <div className="content linear flex flex-col ">
-          <h1 className="pt-20 px-20 text-center font-bold text-6xl ">Crafting Digital Experiences with Code: Explore My Portfolio!</h1>
+          <h1 className="pt- px-20 text-center font-bold text-6xl ">Crafting Digital Experiences with Code: Explore My Portfolio!</h1>
           <div className="sub-text py-6 text-center">
             <span>Excellent xyz</span>
           </div>
@@ -21,7 +21,7 @@ const Hero = () => {
             </button>
           </div>
           <div className="pt-20 flex flex-row justify-between gap-10">
-            <p className="text-white w-[30.8rem] text-left left">
+            <div className="text-white w-[30.8rem] text-left left">
               <p className="text-2xl font-bold mb-4">Get To Know Me</p>
               <i className="text-base text-white/80">
                 {" "}
@@ -40,7 +40,7 @@ const Hero = () => {
                 where every line of code is a note in the melody of efficiency.
                 Your web kingdom deserves nothing less!
               </i>
-            </p>
+            </div>
             <div className="right">
               <div className="pt-5 grid grid-cols-3 gap-2">
                 <div className="col-span-1 text-base font-semibold rounded-md bg-[#27232B] py-3 px-4 text-[#F9FAFB] hover:bg-[#F9FAFB] hover:text-[#27232B]">
@@ -117,7 +117,7 @@ const Hero = () => {
           background-image: url("hero.jpg"); /* Replace 'path/to/your/image.jpg' with your image path */
           background-size: cover;
           background-position: center;
-          block-size: 100vh; /* Adjust height as needed */
+          block-size: 90vh; /* Adjust height as needed */
           color: white; /* Text color */
           padding: 80px; /* Adjust padding as needed */
           background-color: black;
@@ -134,7 +134,7 @@ const Hero = () => {
 
         /* Style for the text or content */
         .background-image h1,
-        .background-image p,
+        .background-image .left,
         .background-image .right,
         .background-image .sub-text {
           position: relative;
