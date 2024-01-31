@@ -1,120 +1,121 @@
 import React from "react";
 
 const TextAnimation = () => {
+  const textStyles = 'block font-semibold leading-6 bg-clip-text text-transparent bg-gradient-to-r from-purple-900 via-purple-300 to-purple-700'
   return (
     <>
       <div className="flex flex-col  ">
-        <div className="container ">
+        <div className="container border  border-purple-400 rounded-md shadow-md">
           <div className="vertical-text text-center">
-            <span className="block leading-6 bg-clip-text text-transparent bg-gradient-to-r from-purple-900 via-purple-300 to-purple-700">
+            <span className= {textStyles}>
               Frontend Development
             </span>
-            <span className="block leading-6 bg-clip-text text-transparent bg-gradient-to-r from-purple-900 via-purple-300 to-purple-700">
+            <span className={textStyles}>
               Backend Development
             </span>
-            <span className="block leading-6 bg-clip-text text-transparent bg-gradient-to-r from-purple-900 via-purple-300 to-purple-700">
+            <span className= {textStyles}>
               Database Management
             </span>
-            <span className="block leading-6 bg-clip-text text-transparent bg-gradient-to-r from-purple-900 via-purple-300 to-purple-700">
+            <span className={textStyles}>
               Mobile Development
             </span>
-            <span className="block leading-6 bg-clip-text text-transparent bg-gradient-to-r from-purple-900 via-purple-300 to-purple-700">API Integration</span>
-            <span className="block leading-6 bg-clip-text text-transparent bg-gradient-to-r from-purple-900 via-purple-300 to-purple-700">
+            <span className={textStyles}>API Integration</span>
+            <span className= {textStyles}>
               Frontend Development
             </span>
-            <span className="block leading-6 bg-clip-text text-transparent bg-gradient-to-r from-purple-900 via-purple-300 to-purple-700">
+            <span className= {textStyles}>
               Backend Development
             </span>
-            <span className="block leading-6 bg-clip-text text-transparent bg-gradient-to-r from-purple-900 via-purple-300 to-purple-700">
+            <span className= {textStyles}>
               Database Management
             </span>
-            <span className="block leading-6 bg-clip-text text-transparent bg-gradient-to-r from-purple-900 via-purple-300 to-purple-700">
+            <span className= {textStyles}>
               Mobile Development
             </span>
-            <span className="block leading-6 bg-clip-text text-transparent bg-gradient-to-r from-purple-900 via-purple-300 to-purple-700">API Integration</span>
-            <span className="block leading-6 bg-clip-text text-transparent bg-gradient-to-r from-purple-900 via-purple-300 to-purple-700">
+            <span className= {textStyles}>API Integration</span>
+            <span className= {textStyles}>
               Frontend Development
             </span>
-            <span className="block leading-6 bg-clip-text text-transparent bg-gradient-to-r from-purple-900 via-purple-300 to-purple-700 ">
+            <span className= {textStyles}>
               Backend Development
             </span>
-            <span className="block leading-6 bg-clip-text text-transparent bg-gradient-to-r from-purple-900 via-purple-300 to-purple-700">
+            <span className= {textStyles}>
               Database Management
             </span>
-            <span className="block leading-6 bg-clip-text text-transparent bg-gradient-to-r from-purple-900 via-purple-300 to-purple-700">
+            <span className= {textStyles}>
               Mobile Development
             </span>
-            <span className="block leading-6 bg-clip-text text-transparent bg-gradient-to-r from-purple-900 via-purple-300 to-purple-700">API Integration</span>
-            <span className="block leading-6 bg-clip-text text-transparent bg-gradient-to-r from-purple-900 via-purple-300 to-purple-700">
+            <span className= {textStyles}>API Integration</span>
+            <span className= {textStyles}>
               Frontend Development
             </span>
-            <span className="block leading-6 bg-clip-text text-transparent bg-gradient-to-r from-purple-900 via-purple-300 to-purple-700">
+            <span className= {textStyles}>
               Backend Development
             </span>
-            <span className="block leading-6 bg-clip-text text-transparent bg-gradient-to-r from-purple-900 via-purple-300 to-purple-700">
+            <span className={textStyles}>
               Database Management
             </span>
-            <span className="block leading-6 bg-clip-text text-transparent bg-gradient-to-r from-purple-900 via-purple-300 to-purple-700">
+            <span className={textStyles}>
               Mobile Development
             </span>
-            <span className="block leading-6 bg-clip-text text-transparent bg-gradient-to-r from-purple-900 via-purple-300 to-purple-700">API Integration</span>
+            <span className={textStyles}>API Integration</span>
             
           </div>
         </div>
         <div className="container ">
           <div className="vertical-text1 text-center">
-            <span className="block leading-6 bg-clip-text text-transparent bg-gradient-to-r from-purple-900 via-purple-300 to-purple-700">
+            <span className={textStyles}>
               Frontend Development
             </span>
-            <span className="block leading-6 bg-clip-text text-transparent bg-gradient-to-r from-purple-900 via-purple-300 to-purple-700">
+            <span className={textStyles}>
               Backend Development
             </span>
-            <span className="block leading-6 bg-clip-text text-transparent bg-gradient-to-r from-purple-900 via-purple-300 to-purple-700">
+            <span className={textStyles}>
               Database Management
             </span>
-            <span className="block leading-6 bg-clip-text text-transparent bg-gradient-to-r from-purple-900 via-purple-300 to-purple-700">
+            <span className={textStyles}>
               Mobile Development
             </span>
-            <span className="block leading-6 bg-clip-text text-transparent bg-gradient-to-r from-purple-900 via-purple-300 to-purple-700">API Integration</span>
-            <span className="block leading-6 bg-clip-text text-transparent bg-gradient-to-r from-purple-900 via-purple-300 to-purple-700">
+            <span className={textStyles}>API Integration</span>
+            <span className={textStyles}>
               Frontend Development
             </span>
-            <span className="block leading-6 bg-clip-text text-transparent bg-gradient-to-r from-purple-900 via-purple-300 to-purple-700">
+            <span className={textStyles}>
               Backend Development
             </span>
-            <span className="block leading-6 bg-clip-text text-transparent bg-gradient-to-r from-purple-900 via-purple-300 to-purple-700">
+            <span className={textStyles}>
               Database Management
             </span>
-            <span className="block leading-6 bg-clip-text text-transparent bg-gradient-to-r from-purple-900 via-purple-300 to-purple-700">
+            <span className={textStyles}>
               Mobile Development
             </span>
-            <span className="block leading-6 bg-clip-text text-transparent bg-gradient-to-r from-purple-900 via-purple-300 to-purple-700">API Integration</span>
-            <span className="block leading-6 bg-clip-text text-transparent bg-gradient-to-r from-purple-900 via-purple-300 to-purple-700">
+            <span className={textStyles}>API Integration</span>
+            <span className={textStyles}>
               Frontend Development
             </span>
-            <span className="block leading-6 bg-clip-text text-transparent bg-gradient-to-r from-purple-900 via-purple-300 to-purple-700">
+            <span className={textStyles}>
               Backend Development
             </span>
-            <span className="block leading-6 bg-clip-text text-transparent bg-gradient-to-r from-purple-900 via-purple-300 to-purple-700">
+            <span className={textStyles}>
               Database Management
             </span>
-            <span className="block leading-6 bg-clip-text text-transparent bg-gradient-to-r from-purple-900 via-purple-300 to-purple-700">
+            <span className={textStyles}>
               Mobile Development
             </span>
-            <span className="block leading-6 bg-clip-text text-transparent bg-gradient-to-r from-purple-900 via-purple-300 to-purple-700">API Integration</span>
+            <span className={textStyles}>API Integration</span>
             <span className="block leading-6 ">
               Frontend Development
             </span>
-            <span className="block leading-6 bg-clip-text text-transparent bg-gradient-to-r from-purple-900 via-purple-300 to-purple-700">
+            <span className={textStyles}>
               Backend Development
             </span>
-            <span className="block leading-6 bg-clip-text text-transparent bg-gradient-to-r from-purple-900 via-purple-300 to-purple-700">
+            <span className={textStyles}>
               Database Management
             </span>
-            <span className="block leading-6 bg-clip-text text-transparent bg-gradient-to-r from-purple-900 via-purple-300 to-purple-700">
+            <span className={textStyles}>
               Mobile Development
             </span>
-            <span className="block leading-6 bg-clip-text text-transparent bg-gradient-to-r from-purple-900 via-purple-300 to-purple-700">API Integration</span>
+            <span className={textStyles}>API Integration</span>
           </div>
           
         </div>
