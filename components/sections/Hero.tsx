@@ -16,7 +16,7 @@ const Hero = () => {
             <span>Excellent xyz</span>
           </div>
           <div className="sub-text flex flex-row justify-center">
-            <button className="text-center font-medium p-4 my-2 md:my-4 bg-[#4D0071] rounded-md">
+            <button className="text-center font-medium p-4 my-2 md:my-4 bg-gradient-to-r from-purple-900 to-purple-800 rounded-md">
             <a href="https://www.linkedin.com/in/latoptop/" > View My Projects </a>
             </button>
           </div>
