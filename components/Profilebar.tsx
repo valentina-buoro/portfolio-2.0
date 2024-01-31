@@ -11,6 +11,11 @@ const Profilebar: React.FC = () => {
       <ProfileCard />
       <div className="w-full bg-[#F9FAFB] h-[1px] my-10 opacity-40" />
     <TextAnimation/>
+   
+            <button className="text-center p-4  bg-[#4D0071] rounded-md">
+            <a href="https://www.linkedin.com/in/latoptop/" > View My Resume </a>
+            </button>
+          
     </nav>
   );
 };

@@ -1,20 +1,18 @@
 import React from "react";
-import Image from "next/image";
-import HeroImg from "../../public/hero.jpg";
-import Divider from "../Divider";
+
 
 const Hero = () => {
   const buttonStyle = "col-span-1 text-base font-semibold rounded-md bg-[#27232B] py-3 px-4 text-[#F9FAFB] hover:bg-[#F9FAFB] hover:text-[#27232B]"
   return (
-    <div className="container w-screen md:w-full  ">
+    <div className="container w-screen  md:w-full  ">
       {/*<div className="mask">
         <Image className="into-img" src={HeroImg} alt="latoptop" />
   </div>*/}
 
-      <div className="w-screen md:w-full background-image  p-6 md:p-20">
-        <div className="content linear flex flex-col items-center ">
+      <div className="w-screen md:w-full background-image  p-6">
+        <div className="content linear flex flex-col items-center  ">
           <h1 className="md:px-20 text-center font-bold text-3xl md:text-6xl ">Crafting Digital Experiences with Code: Explore My Portfolio!</h1>
-          <div className="sub-text py-4 md:py-6 text-center">
+          <div className="sub-text py-4 md:pt-6 text-center">
             <span>Excellent xyz</span>
           </div>
           <div className="sub-text flex flex-row justify-center">
@@ -22,21 +20,17 @@ const Hero = () => {
             <a href="https://www.linkedin.com/in/latoptop/" > View My Projects </a>
             </button>
           </div>
-          <div className="pt-14  flex flex-col md:flex-row md:justify-between gap-14 md:gap-10" id='about-me'>
+          <div className="py-10  flex flex-col md:flex-row md:justify-between gap-14 md:gap-10" id='about-me'>
             <div className="text-white w-screen md:w-[30.8rem] text-left px-6 md:px-0 left">
               <p className="text-2xl font-bold mb-4">Get To Know Me</p>
               <i className=" text-sm md:text-base text-white/80">
                 {" "}
-                I'm your full-stack maestro, orchestrating web wonders with
-                Node.js and React. I turn your ideas into a symphony of code .
-                Leveraging tools like Tailwind for styling and databases such as
-                SQL and PostgreSQL, I turn your ideas into a symphony of code.
+                I'm your full-stack maestro, I turn your ideas into a symphony of code leveraging tools like React, Flutter, Nodejs, Tailwind for styling and databases such as
+                SQL and PostgreSQL, to create a seamless user experience.
                 I'm not just about aesthetics;I optimize for performance,
                 ensuring your app is as swift as a caffeinated developer. 
                 <br/>
                 <br/>
-                With a
-                meticulous approach to detail and a focus on SEO best practices,
                 I bring a technical prowess that transforms ideas into scalable,
                 high-performance web solutions. Let's embark on a tech journey
                 where every line of code is a note in the melody of efficiency.
@@ -111,6 +105,7 @@ const Hero = () => {
         
       </div>
 
+
       <style jsx>{`
         .container {
           position: relative;
@@ -123,6 +118,7 @@ const Hero = () => {
           background-position: center;
           color: white; /* Text color */
           background-color: black;
+          block-size:90vh;
         }
         .background-image::before {
           content: "";
