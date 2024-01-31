@@ -33,20 +33,21 @@ const frontendIcons = [
 const Techstack = () => {
  
   return (
-    <div className="px-20 h-[90vh] flex flex-col justify-center mt-auto">
+    <div className="px-6 md:px-20 h-[90vh] flex flex-col justify-center mt-auto w-screen md:w-full">
       <div className="text-center my-6">
         <p className="text-4xl font-semibold text-[#F9FAFB]">My Tech Stacks</p>
       </div>
-      <div className="mb-8">
+      <div className="mb-8 overflow-hidden container">
+      <div className="vertical-text">
       <div className="text-center">
         <p className="text-xl my-2 font-semibold text-[#F9FAFB]">Frontend Development</p>
       </div>
-      <div className="flex gap-x-5 justify-between">
+      <div className="flex gap-x-5 justify-between overflow-hidden ">
         {frontendIcons.map((icon, index) => {
           return (
             <div
               key={index}
-              className="flex flex-col items-center w-full py-2  bg-[#AEAEAB33] border border-[#5B63D3] rounded-md"
+              className="flex min-w-20 flex-col items-center w-full py-2  bg-[#AEAEAB33] border border-[#5B63D3] rounded-md"
             >
               <div>
                 <Image src={icon.icon} alt={icon.icon} />
@@ -55,10 +56,12 @@ const Techstack = () => {
             </div>
           );
         })}
+        
       </div>
-
       </div>
-      <div className="mb-8">
+      
+      </div>
+      {/*<div className="mb-8">
       <div className="text-center">
         <p className="text-xl mb-2 font-semibold text-[#F9FAFB]">Mobile Development</p>
       </div>
@@ -67,7 +70,7 @@ const Techstack = () => {
           return (
             <div
               key={index}
-              className="flex flex-col items-center w-full py-2  bg-[#AEAEAB33] border border-[#5B63D3] rounded-md"
+              className="flex flex-col max-w-[150px] items-center w-full py-2  bg-[#AEAEAB33] border border-[#5B63D3] rounded-md"
             >
               <div>
                 <Image src={icon.icon} alt={icon.icon} />
@@ -99,14 +102,16 @@ const Techstack = () => {
         })}
       </div>
       <hr className="lg:mt-24 mt-14 opacity-10" />
-      </div>
-      {/*8<style jsx>{`
-        @keyframes marquee {
+      </div>*/}
+      <style jsx>{`
+      
+        /*@keyframes marquee {
           0% {
             transform: translateX(0);
           }
           100% {
             transform: translateX(100%);
+           
           }
           
         }
@@ -118,8 +123,8 @@ const Techstack = () => {
         .scroll-item {
           inline-size: 100%; 
           float: inline-start; 
-        }
-      `}</style>*/}
+        }*/
+      `}</style>
       
     </div>
   );

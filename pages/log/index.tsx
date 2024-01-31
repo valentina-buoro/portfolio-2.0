@@ -1,4 +1,4 @@
-import React from "react";
+/*import React from "react";
 import { GetStaticProps } from "next";
 import Layout from "../../components/Layout";
 import Post from "../../components/Post";
@@ -50,4 +50,4 @@ const Blog: React.FC<Props> = (props) => {
   );
 };
 
-export default Blog;
+export default Blog;*/

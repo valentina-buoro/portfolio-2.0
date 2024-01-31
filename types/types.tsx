@@ -1,5 +1,6 @@
 export type PostProps = {
     id: string;
+    src: string;
     title: string;
     author: {
       name: string;
@@ -15,6 +16,7 @@ export type PostProps = {
    src: string
   };
   export type ProjectProps = {
+    id: string;
     img: string;
     title: string;
     description: string;

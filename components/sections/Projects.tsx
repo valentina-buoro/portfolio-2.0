@@ -17,14 +17,14 @@ type Props = {
 
 const Projects:  React.FC<Props> = (props) =>  {
   return (
-    <div className="bg-[#18151B] px-20  ">
+    <div className="bg-[#18151B] px-6 md:px-20 w-screen md:w-full items-center">
        <div className="text-center my-16">
         <p className="text-4xl font-semibold text-[#F9FAFB]">Featured Projects</p>
         <p className="text-[#CFD1D4] text-base">My top projects that will blow your mind crafted with excellent skills and precision. </p>
       </div>
-      {props.projectFeed.map((post,index) => (
-            <div key={index} className="mb-20">
-              <ProjectCard project={post} />
+      {props.projectFeed.map((project) => (
+            <div key={project.id} className="mb-20">
+              <ProjectCard project={project} />
             </div>
           ))}
      

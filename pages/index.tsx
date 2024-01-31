@@ -14,16 +14,18 @@ import Contact from "../components/sections/Contact";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css"
 import Divider from "../components/Divider";
+import Blogs from "../components/sections/Blog";
 
 export const getStaticProps: GetStaticProps = async () => {
   return {
-    props: { projectFeed },
+    props: { projectFeed, feed },
     revalidate: 10,
   };
 };
 
 type Props = {
   projectFeed: ProjectProps[];
+  feed: PostProps[];
 };
 
 
@@ -36,6 +38,7 @@ const Blog: React.FC<Props> = (props) => {
      <Techstack/>
      <Services/>
      <Contact/>
+     <Blogs feed={props.feed} />
     </Layout>
   );
 };

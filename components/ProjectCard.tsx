@@ -1,12 +1,13 @@
 import React from 'react'
+import Router from "next/router";
 import { ProjectProps } from "../types/types";
 import Image from 'next/image';
 
 
 const ProjectCard: React.FC<{ project: ProjectProps }> = ({ project }) => {
   return (
-    <div className="flex">
-        <div className="bg-[#231F29] p-8 flex flex-col justify-around">
+    <div className="flex justify-center md:flex ">
+        <div className="hidden bg-[#231F29] p-8 md:flex flex-col justify-around">
           <div>
             <p className="text-white text-3xl font-semibold">Trust Ballot</p>
             <p className="text-white">
@@ -35,15 +36,15 @@ const ProjectCard: React.FC<{ project: ProjectProps }> = ({ project }) => {
           </div>
 
           <div className="sub-text flex flex-row justify-between">
-            <button className="text-center p-4 my-4 bg-[#4D0071] text-[#F9FAFB] rounded-md">
-              <a href="https://www.linkedin.com/in/latoptop/"> View Project </a>
+            <button className="text-center p-4 my-4 bg-[#4D0071] text-[#F9FAFB] rounded-md" onClick={() => Router.push("/project/[id]", `/project/${project.id}`)}>
+              <span> View Project </span>
             </button>
             <button className="text-center p-4 my-4 bg-[#F9FAFB] text-[#4D0071] rounded-md">
               <a href="https://www.linkedin.com/in/latoptop/"> GitHub Repo </a>
             </button>
           </div>
         </div>
-        <div className="w-[34rem] h-[32rem] card">
+        <div className="w-[21rem] md:w-[34rem] h-[14.5rem] md:h-[32rem] card" >
         <Image
             src={project.img}
             alt="Trust Ballot"

@@ -2,50 +2,53 @@ import React from "react"
 import { GetServerSideProps } from "next"
 import ReactMarkdown from "react-markdown"
 import Layout from "../../components/Layout"
-import { PostProps } from "../../types/types"
+import { PostProps , ProjectProps} from "../../types/types"
 import { feed } from "../../data/blog-data"
+import { projectFeed } from "../../data/project-data"
+import Image from "next/image"
 
 export const getServerSideProps: GetServerSideProps = async ({ params }) => {
   
   return {
-    props: feed.find((post) => post.id === params?.id) || {},
+    props: projectFeed.find((project) => project.id === params?.id) || {},
   }
 }
 
-const Project: React.FC<PostProps> = (props) => {
+const Project: React.FC<ProjectProps> = (props) => {
   let title = props.title
-  if (!props.published) {
+  if (!props.title) {
     title = `${title} (Draft)`
   }
 
   return (
     <Layout>
-      <div>
-        <h2>{title}</h2>
-        <p>By {props?.author?.name || "Unknown author"}</p>
-        <ReactMarkdown children={props.content} />
+      <div className="px-6 md:px-20 ">
+        <div className="max-h-[31.25rem] bg-red-500" >
+          <Image src={props.img} alt={props.title} />
+        </div>
+        <div>
+          <div className="flex justify-between">
+              <div>
+                <p className="text-lg font-normal text-[#98989A]">Publication Date</p>
+                <p className="text-lg font-medium text-white">October 15, 2023</p>
+              </div>
+              <div>
+                see on hashnode
+              </div>
+          </div>
+          <div>
+            <p className="font-normal text-2xl text-white">Project Details</p>
+            <p className="text-lg font-normal text-[#98989A]">{props.description}</p>
+          </div>
+          <div>
+            <p className="text-lg font-normal text-[#98989A]">Features</p>
+            <p className="text-lg font-normal text-[#98989A]">{props.description}</p>
+            
+          </div>
+        </div>
+      
       </div>
-      <style jsx>{`
-        .page {
-          background: white;
-          padding: 2rem;
-        }
-
-        .actions {
-          margin-top: 2rem;
-        }
-
-        button {
-          background: #ececec;
-          border: 0;
-          border-radius: 0.125rem;
-          padding: 1rem 2rem;
-        }
-
-        button + button {
-          margin-left: 1rem;
-        }
-      `}</style>
+      
     </Layout>
   )
 }

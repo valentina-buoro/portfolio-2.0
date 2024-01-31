@@ -4,7 +4,7 @@ import { CardProps } from "../types/types";
 
 const ServicesCard = ({ text, title, src }: CardProps) => {
   return (
-    <div className="pt-3 flex flex-col  p-5">
+    <div className="pt-3 flex flex-col p-5 hover:bg-[#221E26] hover:border-2 hover:border-[#332E38] hover:rounded-md">
       <Image src={src} alt="Careers" />
       <div className="flex-col items-start space-y-4 font-medium   tracking-tighter">
         <p className="text-base md:text-2xl text-justify text-white leading-6 md:leading-[28.8px] font-medium">

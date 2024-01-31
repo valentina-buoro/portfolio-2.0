@@ -1,20 +1,26 @@
-import React from 'react'
-
+import React from "react";
 
 const TextAnimation = () => {
-  
   return (
-   <>
-   <div className="flex flex-col justify-center">
-      <div className="container ">
-       <div className="vertical-text text-center">
-       <span className="block leading-6 text-white">Frontend Development</span>
-        <span className="block leading-6 text-white">Backend Development</span>
-        <span className="block leading-6 text-white">Database Management</span>
-        <span className="block leading-6 text-white">Mobile Development</span>
-        <span className="block leading-6 text-white">API Integration</span>
-       </div>
-      </div>
+    <>
+      <div className="flex flex-col justify-center ">
+        <div className="container ">
+          <div className="vertical-text text-center">
+            <span className="block leading-6 text-white">
+              Frontend Development
+            </span>
+            <span className="block leading-6 text-white">
+              Backend Development
+            </span>
+            <span className="block leading-6 text-white">
+              Database Management
+            </span>
+            <span className="block leading-6 text-white">
+              Mobile Development
+            </span>
+            <span className="block leading-6 text-white">API Integration</span>
+          </div>
+        </div>
       </div>
       <style jsx>{`
         .container {
@@ -33,11 +39,12 @@ const TextAnimation = () => {
 
         .vertical-text span {
           display: block;
-          line-height: 5; /* Adjust line height as needed */
+          line-height: 5; 
+          /* Adjust line height as needed */
         }
         .vertical-text span:focus {
-  color: red; /* Change color when focused */
-}
+          color: red; /* Change color when focused */
+        }
 
         @keyframes slide-up {
           0% {
@@ -48,8 +55,8 @@ const TextAnimation = () => {
           }
         }
       `}</style>
-      </>
-  )
-}
+    </>
+  );
+};
 
-export default TextAnimation
+export default TextAnimation;

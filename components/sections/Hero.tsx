@@ -1,29 +1,31 @@
 import React from "react";
 import Image from "next/image";
 import HeroImg from "../../public/hero.jpg";
+import Divider from "../Divider";
 
 const Hero = () => {
+  const buttonStyle = "col-span-1 text-base font-semibold rounded-md bg-[#27232B] py-3 px-4 text-[#F9FAFB] hover:bg-[#F9FAFB] hover:text-[#27232B]"
   return (
-    <div className="container">
+    <div className="container w-screen md:w-full  ">
       {/*<div className="mask">
         <Image className="into-img" src={HeroImg} alt="latoptop" />
   </div>*/}
 
-      <div className="background-image">
-        <div className="content linear flex flex-col ">
-          <h1 className="pt- px-20 text-center font-bold text-6xl ">Crafting Digital Experiences with Code: Explore My Portfolio!</h1>
-          <div className="sub-text py-6 text-center">
+      <div className="w-screen md:w-full background-image  p-6 md:p-20">
+        <div className="content linear flex flex-col items-center ">
+          <h1 className="md:px-20 text-center font-bold text-3xl md:text-6xl ">Crafting Digital Experiences with Code: Explore My Portfolio!</h1>
+          <div className="sub-text py-4 md:py-6 text-center">
             <span>Excellent xyz</span>
           </div>
           <div className="sub-text flex flex-row justify-center">
-            <button className="text-center p-4 my-4 bg-[#4D0071] rounded-md">
+            <button className="text-center p-4 my-2 md:my-4 bg-[#4D0071] rounded-md">
             <a href="https://www.linkedin.com/in/latoptop/" > View My Projects </a>
             </button>
           </div>
-          <div className="pt-20 flex flex-row justify-between gap-10">
-            <div className="text-white w-[30.8rem] text-left left">
+          <div className="pt-14  flex flex-col md:flex-row md:justify-between gap-14 md:gap-10">
+            <div className="text-white w-screen md:w-[30.8rem] text-left px-6 md:px-0 left">
               <p className="text-2xl font-bold mb-4">Get To Know Me</p>
-              <i className="text-base text-white/80">
+              <i className=" text-sm md:text-base text-white/80">
                 {" "}
                 I'm your full-stack maestro, orchestrating web wonders with
                 Node.js and React. I turn your ideas into a symphony of code .
@@ -41,85 +43,85 @@ const Hero = () => {
                 Your web kingdom deserves nothing less!
               </i>
             </div>
-            <div className="right">
+            <div className="right px-6 md:px-0">
               <div className="pt-5 grid grid-cols-3 gap-2">
-                <div className="col-span-1 text-base font-semibold rounded-md bg-[#27232B] py-3 px-4 text-[#F9FAFB] hover:bg-[#F9FAFB] hover:text-[#27232B]">
+                <div className= {buttonStyle}>
                   <span>Javascript</span>
                 </div>
-                <div className="col-span-1 text-base font-semibold rounded-md bg-[#27232B] py-3 px-4 text-[#F9FAFB] hover:bg-[#F9FAFB] hover:text-[#27232B]">
+                <div className={buttonStyle}>
                   <span>React</span>
                 </div>
-                <div className="col-span-1 text-base font-semibold rounded-md bg-[#27232B] py-3 px-4 text-[#F9FAFB] hover:bg-[#F9FAFB] hover:text-[#27232B]">
+                <div className={buttonStyle}>
                   <span>Nodejs</span>
                 </div>
               </div>
               <div className="pt-2 grid grid-cols-4 gap-2">
-                <div className="text-base font-semibold rounded-md bg-[#27232B] py-3 px-4 text-[#F9FAFB] hover:bg-[#F9FAFB] hover:text-[#27232B]">
+                <div className={buttonStyle}>
                   <span>Graphql</span>
                 </div>
-                <div className="text-base font-semibold rounded-md bg-[#27232B] py-3 px-4 text-[#F9FAFB] hover:bg-[#F9FAFB] hover:text-[#27232B]">
+                <div className={buttonStyle}>
                   <span>SQL</span>
                 </div>
-                <div className="text-base font-semibold rounded-md bg-[#27232B] py-3 px-4 text-[#F9FAFB] hover:bg-[#F9FAFB] hover:text-[#27232B]">
+                <div className={buttonStyle}>
                   <span>GSAP</span>
                 </div>
-                <div className="text-base font-semibold rounded-md bg-[#27232B] py-3 px-4 text-[#F9FAFB] hover:bg-[#F9FAFB] hover:text-[#27232B]">
+                <div className={buttonStyle}>
                   <span>Zustand</span>
                 </div>
               </div>
               <div className="pt-2 grid grid-cols-3 gap-2">
-                <div className="col-span-1 text-base font-semibold rounded-md bg-[#27232B] py-3 px-4 text-[#F9FAFB] hover:bg-[#F9FAFB] hover:text-[#27232B]">
+                <div className= {buttonStyle}>
                   <span>Javascript</span>
                 </div>
-                <div className="col-span-1 text-base font-semibold rounded-md bg-[#27232B] py-3 px-4 text-[#F9FAFB] hover:bg-[#F9FAFB] hover:text-[#27232B]">
+                <div className= {buttonStyle}>
                   <span>React</span>
                 </div>
-                <div className="col-span-1 text-base font-semibold rounded-md bg-[#27232B] py-3 px-4 text-[#F9FAFB] hover:bg-[#F9FAFB] hover:text-[#27232B]">
+                <div className= {buttonStyle}>
                   <span>Nodejs</span>
                 </div>
               </div>
               <div className="pt-2 grid grid-cols-4 gap-2">
-                <div className="text-base font-semibold rounded-md bg-[#27232B] py-3 px-4 text-[#F9FAFB] hover:bg-[#F9FAFB] hover:text-[#27232B]">
+                <div className= {buttonStyle}>
                   <span>Graphql</span>
                 </div>
-                <div className="text-base font-semibold rounded-md bg-[#27232B] py-3 px-4 text-[#F9FAFB] hover:bg-[#F9FAFB] hover:text-[#27232B]">
+                <div className= {buttonStyle}>
                   <span>SQL</span>
                 </div>
-                <div className="text-base font-semibold rounded-md bg-[#27232B] py-3 px-4 text-[#F9FAFB] hover:bg-[#F9FAFB] hover:text-[#27232B]">
+                <div className= {buttonStyle}>
                   <span>GSAP</span>
                 </div>
-                <div className="text-base font-semibold rounded-md bg-[#27232B] py-3 px-4 text-[#F9FAFB] hover:bg-[#F9FAFB] hover:text-[#27232B]">
+                <div className= {buttonStyle}>
                   <span>Zustand</span>
                 </div>
               </div>
               <div className="pt-2 grid grid-cols-3 gap-2">
-                <div className="col-span-1 text-base font-semibold rounded-md bg-[#27232B] py-3 px-4 text-[#F9FAFB] hover:bg-[#F9FAFB] hover:text-[#27232B]">
+                <div className= {buttonStyle}>
                   <span>Javascript</span>
                 </div>
-                <div className="col-span-1 text-base font-semibold rounded-md bg-[#27232B] py-3 px-4 text-[#F9FAFB] hover:bg-[#F9FAFB] hover:text-[#27232B]">
+                <div className= {buttonStyle}>
                   <span>React</span>
                 </div>
-                <div className="col-span-1 text-base font-semibold rounded-md bg-[#27232B] py-3 px-4 text-[#F9FAFB] hover:bg-[#F9FAFB] hover:text-[#27232B]">
+                <div className= {buttonStyle}>
                   <span>Nodejs</span>
                 </div>
               </div>
             </div>
           </div>
         </div>
+        
       </div>
 
       <style jsx>{`
         .container {
           position: relative;
+
         }
 
         .background-image {
           background-image: url("hero.jpg"); /* Replace 'path/to/your/image.jpg' with your image path */
           background-size: cover;
           background-position: center;
-          block-size: 90vh; /* Adjust height as needed */
           color: white; /* Text color */
-          padding: 80px; /* Adjust padding as needed */
           background-color: black;
         }
         .background-image::before {
@@ -141,10 +143,7 @@ const Hero = () => {
           z-index: 1; /* Ensure text appears above the overlay */
         }
 
-        .background-image h1 {
-          font-size: 32px; /* Adjust font size as needed */
-        }
-
+        
        
       `}</style>
 

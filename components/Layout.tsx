@@ -1,8 +1,15 @@
 import React, { ReactNode } from "react";
+import type { Metadata } from "next"
 import Header from "./Header";
 import Profilebar from "./Profilebar";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
+
+export const metadata: Metadata = {
+  title: "Valentina Buoro",
+  description: "Valentina's portfolio",
+};
+
 
 type Props = {
   children: ReactNode;
@@ -10,7 +17,7 @@ type Props = {
 
 const Layout: React.FC<Props> = (props) => (
   
-    <div className=" h-full flex  bg-black ">
+    <div className=" h-full flex  bg-black m-0 p-0">
       <Profilebar />
       <main className="md:ml-[21rem] md:mr-[4.375rem] z-10 bg-[#18151B] ">
         {/* Main content goes here */}

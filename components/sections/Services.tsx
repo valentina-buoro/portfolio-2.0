@@ -46,7 +46,7 @@ const servicesRoutes = [
 ]
 const Services = () => {
   return (
-    <section className="px-20 h-[80vh] flex flex-col justify-center mt-20">
+    <section className="px-6 md:px-20 h-[80vh] flex flex-col justify-center mt-20 w-screen md:w-full">
 
       <div className="text-center mb-12">
         <p className="text-4xl font-semibold text-[#F9FAFB]">Services</p>
