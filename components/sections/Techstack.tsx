@@ -1,5 +1,5 @@
 import React from "react";
-import Slider from "react-slick";
+
 import Image from "next/image";
 import HtmlIcon from "../../public/htmlIcon.svg";
 import CssIcon from "../../public/css.svg";

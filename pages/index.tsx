@@ -1,7 +1,6 @@
 import React from "react";
 import { GetStaticProps } from "next";
 import Layout from "../components/Layout";
-import Post from "../components/Post";
 import { PostProps } from "../types/types";
 import { feed } from "../data/blog-data";
 import { ProjectProps } from "../types/types";

@@ -1,6 +1,6 @@
 
 import Image from "next/image";
-import Link from "next/link";
+
 import ServicesCard from "../ServicesCard";
 import Html from '../../public/html.svg'
 import Mobile from '../../public/mobile.svg'

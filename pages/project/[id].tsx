@@ -1,12 +1,11 @@
 import React from "react"
 import { GetServerSideProps } from "next"
-import ReactMarkdown from "react-markdown"
 import Layout from "../../components/Layout"
-import { PostProps , ProjectProps} from "../../types/types"
-import { feed } from "../../data/blog-data"
+import {  ProjectProps} from "../../types/types"
+
 import { projectFeed } from "../../data/project-data"
 import Image from "next/image"
-import PageHeader from "../../components/pageHeader"
+import PageHeader from "../../components/PageHeader"
 
 export const getServerSideProps: GetServerSideProps = async ({ params }) => {
   

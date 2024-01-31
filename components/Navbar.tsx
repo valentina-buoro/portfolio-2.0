@@ -1,8 +1,7 @@
 // Sidebar.tsx
 
 import React from "react";
-import Link from "next/link";
-import { useRouter, usePathname } from "next/navigation";
+import {  usePathname } from "next/navigation";
 import Sun from "../public/sun.svg"
 import Home from "../public/home.svg"
 import Person from"../public/person.svg"
@@ -13,14 +12,6 @@ import Recommendation from "../public/recommendation.svg"
 import Contact from "../public/email.svg"
 import Image from "next/image";
 
-interface SidebarItemsProps {
-  label: string;
- 
-  href: string;
-  
-  icon: string;
-
-}
 
 const socialRoutes = [
   {

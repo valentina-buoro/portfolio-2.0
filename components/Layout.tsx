@@ -1,6 +1,6 @@
 import React, { ReactNode } from "react";
 import type { Metadata } from "next"
-import Header from "./Header";
+
 import Profilebar from "./Profilebar";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
