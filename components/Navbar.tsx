@@ -2,71 +2,92 @@
 
 import React from "react";
 import Link from "next/link";
+import { useRouter, usePathname } from "next/navigation";
 import Sun from "../public/sun.svg"
 import Home from "../public/home.svg"
 import Person from"../public/person.svg"
+import Projects from "../public/projects.svg"
 import TechStack from "../public/techStack.svg"
 import Services from "../public/services.svg"
 import Recommendation from "../public/recommendation.svg"
 import Contact from "../public/email.svg"
 import Image from "next/image";
 
+interface SidebarItemsProps {
+  label: string;
+ 
+  href: string;
+  
+  icon: string;
+
+}
+
 const socialRoutes = [
   {
     icon: Sun,
     label: "Dashboard",
-    href: "/",
   },
   {
     icon: Home,
-    label: "Inventory",
-    label2: "List of Medicines",
-    href: "/inventory",
-    href2: "/list-of-medicines",
+    label: "Home",
+    href: "/",
+   
     collapsible: true,
   },
   {
     icon: Person,
-    label: "Reports",
-    label2: "Sales Report",
-    href: "/reports",
-    href2: "/sales-report",
+    label: "About me",
+    href: "about-me",
+  },
+  {
+    icon: Projects,
+    label: "Projects",
+    href: "projects",
   },
   {
     icon: TechStack,
-    label: "Configuration/settings",
-    href: "configure",
+    label: "Tech Stack",
+    href: "tech-stack",
   },
   {
     icon: Services,
-    label: "Reports",
-    label2: "Sales Report",
-    href: "/reports",
-    href2: "/sales-report",
+    label: "Services",
+    href: "services",
   },
   {
     icon: Recommendation,
-    label: "Configuration/settings",
-    href: "configure",
+    label: "Recommendation",
+    href: "recommendation",
   },
   {
     icon: Contact,
-    label: "Configuration/settings",
-    href: "configure",
+    label: "Contact",
+    href: "contact",
   },
 ]
 
 
 
 const Navbar: React.FC = () => {
+
+  const scrollToSection = (id: any) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+  const pathname = usePathname();
+
+  const activeRoute = pathname === "/tech-stack" 
+
   return (
     <nav className=" hidden md:flex flex-col bg-[#18151B] h-full w-[4.1rem] fixed top-0 right-0 overflow-y-auto shadow-sm">
-       <div className="flex flex-col gap-y-9 items-center mt-9">
+       <div className="flex flex-col gap-y-9 items-center mt-9 ">
         {socialRoutes.map((route, index) => {
           return (
-            <span key={index} className="flex items-center ">
+            <a key={index} className={activeRoute ? 'flex items-center bg-green-600 ' : 'flex items-center '} onClick={() => scrollToSection(route.href)}>
               <Image src={route.icon} alt={route.icon} />
-            </span>
+            </a>
           );
         })}
       </div>

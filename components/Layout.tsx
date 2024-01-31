@@ -7,7 +7,7 @@ import Footer from "./Footer";
 
 export const metadata: Metadata = {
   title: "Valentina Buoro",
-  description: "Valentina's portfolio",
+  description: "z",
 };
 
 

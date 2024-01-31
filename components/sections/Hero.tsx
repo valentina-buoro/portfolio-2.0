@@ -22,7 +22,7 @@ const Hero = () => {
             <a href="https://www.linkedin.com/in/latoptop/" > View My Projects </a>
             </button>
           </div>
-          <div className="pt-14  flex flex-col md:flex-row md:justify-between gap-14 md:gap-10">
+          <div className="pt-14  flex flex-col md:flex-row md:justify-between gap-14 md:gap-10" id='about-me'>
             <div className="text-white w-screen md:w-[30.8rem] text-left px-6 md:px-0 left">
               <p className="text-2xl font-bold mb-4">Get To Know Me</p>
               <i className=" text-sm md:text-base text-white/80">

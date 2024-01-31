@@ -6,6 +6,7 @@ import { PostProps , ProjectProps} from "../../types/types"
 import { feed } from "../../data/blog-data"
 import { projectFeed } from "../../data/project-data"
 import Image from "next/image"
+import PageHeader from "../../components/pageHeader"
 
 export const getServerSideProps: GetServerSideProps = async ({ params }) => {
   
@@ -22,7 +23,9 @@ const Project: React.FC<ProjectProps> = (props) => {
 
   return (
     <Layout>
-      <div className="px-6 md:px-20 ">
+       <PageHeader/>
+      <div className="px-6 md:px-20 bg-[#18151B] h-screen flex flex-col">
+       
         <div className="max-h-[31.25rem] bg-red-500" >
           <Image src={props.img} alt={props.title} />
         </div>
