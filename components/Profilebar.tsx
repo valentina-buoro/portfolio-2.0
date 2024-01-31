@@ -12,7 +12,7 @@ const Profilebar: React.FC = () => {
       <div className="w-full bg-[#F9FAFB] h-[1px] my-10 opacity-40" />
     <TextAnimation/>
    
-            <button className="text-center p-4  bg-[#4D0071] rounded-md">
+            <button className="text-center text-lg text-white font-semibold p-4  bg-gradient-to-r from-purple-900 via-purple-500 to-purple-900 rounded-md">
             <a href="https://www.linkedin.com/in/latoptop/" > View My Resume </a>
             </button>
           
