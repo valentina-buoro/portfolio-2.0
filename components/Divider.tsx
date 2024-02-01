@@ -10,6 +10,7 @@ const Divider = () => {
             <span className="block">Debugging</span>
             <span className="block">Refactoring</span>
             <span className="block">Code Review</span>
+            <span className="block">Planning</span>
             <span className="block">Research</span>
             <span className="block">Documentation</span>
           </div>
@@ -18,6 +19,7 @@ const Divider = () => {
             <span className="block">Debugging</span>
             <span className="block">Refactoring</span>
             <span className="block">Code Review</span>
+            <span className="block">Planning</span>
             <span className="block">Research</span>
             <span className="block">Documentation</span>
           </div>
