@@ -2,7 +2,7 @@ import React from "react";
 
 
 const Hero = () => {
-  const buttonStyle = "col-span-1 text-base font-semibold rounded-md bg-[#27232B] py-3 px-4 text-[#F9FAFB] hover:bg-[#F9FAFB] hover:text-[#27232B]"
+  const buttonStyle = "col-span-1 text-[9px] md:text-xs lg:text-base text-center font-semibold rounded-md bg-[#27232B] py-3 px-4 text-[#F9FAFB] hover:bg-[#F9FAFB] hover:text-[#27232B]"
   return (
     <div className="container w-screen  md:w-full mx-auto ">
       {/*<div className="mask">
@@ -37,7 +37,7 @@ const Hero = () => {
                 Your web kingdom deserves nothing less!
               </i>
             </div>
-            <div className="right px-6 md:px-0">
+            <div className="right px-6 md:px-0 ">
               <div className="pt-5 grid grid-cols-3 gap-2">
                 <div className= {buttonStyle}>
                   <span>Javascript</span>
