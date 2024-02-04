@@ -7,7 +7,7 @@ import Image from 'next/image';
 const ProjectCard: React.FC<{ project: ProjectProps }> = ({ project }) => {
   return (
     <div className="flex justify-center md:flex ">
-        <div className="hidden bg-[#231F29] p-8 md:flex flex-col justify-around">
+        <div className="hidden bg-[#231F29] p-12 md:flex flex-col justify-around">
           <div>
             <p className="text-white text-3xl font-semibold">Trust Ballot</p>
             <p className="text-white">

@@ -4,7 +4,7 @@ const Contact = () => {
   return (
     <div className='px-6 md:px-20  flex flex-col justify-center mt-16 w-screen md:w-full' id='contact'>
       <div className="flex flex-col md:flex-row">
-        <div className=" bg-[#231F29] p-4 md:p-8 md:flex flex-col justify-around w-[22.4rem]">
+        <div className=" bg-[#231F29] p-4 md:p-8 md:flex flex-col justify-around md:w-[22.4rem]">
           <div>
             <p className="text-white text-2xl md:text-3xl font-semibold">Have an Awesome Project Idea?<span className='text-[#9C00E5]'>Let’s Discuss</span> </p>
             <p className="text-white">

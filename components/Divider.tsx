@@ -4,24 +4,24 @@ const Divider = () => {
   return (
     <div className="w-screen md:w-full ">
       <div className="h-14 bg-gradient-to-r from-purple-900 via-purple-300 to-purple-700">
-        <div className="h-14 transform rotate-[-4.068deg] flex-1 bg-[#000;] border border-[#4D0071] border-x-8 border-x-black w-full flex justify-center overflow-hidden">
-          <div className="text-white text-center text-2xl font-normal w-full flex justify-around items-center scroll-containers primary-text">
-            <span className="block">Coding</span>
-            <span className="block">Debugging</span>
-            <span className="block">Refactoring</span>
-            <span className="block">Code Review</span>
-            <span className="block">Planning</span>
-            <span className="block">Research</span>
-            <span className="block">Documentation</span>
+        <div className="h-14 transform rotate-[-4.068deg] flex-1 bg-[#000;] border border-[#4D0071] border-x-8 border-x-black w-full flex justify-center items-center overflow-hidden">
+          <div className="text-white text-center text-xs md:text-2xl font-normal w-full flex md:justify-around items-center scroll-containers primary-text">
+            <span className="block mx-4">Coding</span>
+            <span className="block mx-4">Debugging</span>
+            <span className="block mx-4">Refactoring</span>
+            <span className="block mx-4">Code Review</span>
+            <span className="block mx-4">Planning</span>
+            <span className="block mx-4">Research</span>
+            <span className="block mx-4">Documentation</span>
           </div>
-          <div className="text-white text-center text-2xl font-normal w-full flex justify-around items-center scroll-container secondary-text">
-          <span className="block">Coding</span>
-            <span className="block">Debugging</span>
-            <span className="block">Refactoring</span>
-            <span className="block">Code Review</span>
-            <span className="block">Planning</span>
-            <span className="block">Research</span>
-            <span className="block">Documentation</span>
+          <div className="hidden text-white text-center text-xs md:text-2xl font-normal w-full md:flex md:justify-around items-center scroll-container secondary-text">
+          <span className="block mx-4">Coding</span>
+            <span className="block mx-4">Debugging</span>
+            <span className="block mx-4">Refactoring</span>
+            <span className="block mx-4">Code Review</span>
+            <span className="block mx-4">Planning</span>
+            <span className="block mx-4">Research</span>
+            <span className="block mx-4">Documentation</span>
           </div>
         </div>
       </div>

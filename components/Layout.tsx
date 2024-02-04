@@ -19,7 +19,7 @@ const Layout: React.FC<Props> = (props) => (
   
     <div className=" h-full flex  bg-black m-0 p-0">
       <Profilebar />
-      <main className="md:ml-[21rem] md:mr-[4.375rem] w-full z-10 bg-[#18151B] ">
+      <main className="md:ml-[21rem] md:mr-[4.375rem] box-border m-0 p-0 w-screen md:w-full md:z-10 bg-[#18151B] ">
         {/* Main content goes here */}
         {props.children}
         {/* Add your main content */}

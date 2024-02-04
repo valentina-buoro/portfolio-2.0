@@ -46,11 +46,11 @@ const servicesRoutes = [
 ]
 const Services = () => {
   return (
-    <section className="px-6 md:px-20 md:py-10 h-[80vh] flex flex-col justify-center w-screen md:w-full" id='services'>
+    <section className="px-6 md:px-20 md:py-10 flex flex-col justify-center w-screen md:w-full" id='services'>
 
 <div className="text-center my-16 w-2/4 items-center mx-auto">
         <p className="text-4xl font-semibold text-[#F9FAFB] ">Services</p>
-        <div className="bg-white h-2  w-2/3  my-3" />
+        <div className="bg-white h-1  w-2/3  my-3" />
       </div>
      
      <div className=" pt-5 grid grid-cols-1 lg:grid-cols-3 gap-y-10 gap-x-5">
