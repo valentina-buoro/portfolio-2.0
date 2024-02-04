@@ -44,7 +44,7 @@ const ProjectCard: React.FC<{ project: ProjectProps }> = ({ project }) => {
             </button>
           </div>
         </div>
-        <div className="w-[21rem] md:w-[34rem] h-[14.5rem] md:h-[32rem] card" >
+        <div className="w-[21rem] md:w-[34rem] object-contain card" >
         <Image
             src={project.img}
             alt="Trust Ballot"
@@ -61,11 +61,6 @@ const ProjectCard: React.FC<{ project: ProjectProps }> = ({ project }) => {
           overflow: hidden;
         }
 
-        .card img {
-          inline-size: 100%;
-          block-size: auto;
-          display: block;
-        }
 
         .card-content {
           position: absolute;

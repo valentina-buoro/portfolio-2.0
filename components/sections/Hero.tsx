@@ -4,7 +4,7 @@ import React from "react";
 const Hero = () => {
   const buttonStyle = "col-span-1 text-base font-semibold rounded-md bg-[#27232B] py-3 px-4 text-[#F9FAFB] hover:bg-[#F9FAFB] hover:text-[#27232B]"
   return (
-    <div className="container w-screen  md:w-full  ">
+    <div className="container w-screen  md:w-full mx-auto ">
       {/*<div className="mask">
         <Image className="into-img" src={HeroImg} alt="latoptop" />
   </div>*/}
@@ -109,7 +109,7 @@ const Hero = () => {
       <style jsx>{`
         .container {
           position: relative;
-
+          
         }
 
         .background-image {
@@ -118,7 +118,8 @@ const Hero = () => {
           background-position: center;
           color: white; /* Text color */
           background-color: black;
-          block-size:90vh;
+          width: 100%;
+          
         }
         .background-image::before {
           content: "";

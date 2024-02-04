@@ -33,182 +33,69 @@ const frontendIcons = [
 const Techstack = () => {
   return (
     <div
-      className="px-6  md:py-10 h-[70vh] flex flex-col  w-screen md:w-full overflow-hidden "
+      className="px-6 md:px-20 md:py-10 w-screen md:w-full items-center"
       id="tech-stack"
     >
-      <div className="grid grid-cols-3 w-11/12 mx-auto">
-        <div className=" relative">
-          <div className="flex flex-col ">
-            <div className="flex flex-col scroll-container primary ">
-              {frontendIcons.map((icon, index) => {
-                return (
-                  <div
-                    key={index}
-                    className="flex w-24 md:w-48 my-2 flex-col items-center  py-2  bg-[#AEAEAB33] border border-[#5B63D3] rounded-md"
-                  >
-                    <div>
-                      <Image src={icon.icon} alt={icon.icon} />
-                    </div>
-                    <span className="text-[#F9FAFB] text-base">
-                      {icon.text}
-                    </span>
+      <div className="text-center my-16 w-2/4 items-center mx-auto">
+        <p className="text-4xl font-semibold text-[#F9FAFB] ">Tech Stacks</p>
+        <div className="bg-white h-2  w-2/3  my-3" />
+      </div>
+      <div className="  grid grid-cols-12">
+        <div className=" col-start-2 col-end-7 ">
+          <p className="text-center font-thin text-xl text-white ">Frontend</p>
+          <div className="grid grid-cols-3 gap-4  border border-[#5B63D3]" >
+            {frontendIcons.map((icon, index) => {
+              return (
+                <div
+                  key={index}
+                  className="flex w-12 md:w-24 my-2 flex-col items-center  py-2  bg-[#AEAEAB33] border border-[#5B63D3] rounded-md"
+                >
+                  <div>
+                    <Image src={icon.icon} alt={icon.icon} />
                   </div>
-                );
-              })}
-            </div>
-            <div className="flex flex-col scroll-container secondary ">
-              {frontendIcons.map((icon, index) => {
-                return (
-                  <div
-                    key={index}
-                    className="flex w-24 md:w-48 my-2 flex-col items-center  py-2  bg-[#AEAEAB33] border border-[#5B63D3] rounded-md"
-                  >
-                    <div>
-                      <Image src={icon.icon} alt={icon.icon} />
-                    </div>
-                    <span className="text-[#F9FAFB] text-base">
-                      {icon.text}
-                    </span>
-                  </div>
-                );
-              })}
-            </div>
+                  <span className="text-[#F9FAFB] text-base">{icon.text}</span>
+                </div>
+              );
+            })}
           </div>
         </div>
-        <div className=" relative">
-          <div className="flex flex-col ">
-            <div className="flex flex-col scroll-container primary ">
-              {frontendIcons.map((icon, index) => {
-                return (
-                  <div
-                    key={index}
-                    className="flex w-24 md:w-48 my-2 flex-col items-center  py-2  bg-[#AEAEAB33] border border-[#5B63D3] rounded-md"
-                  >
-                    <div>
-                      <Image src={icon.icon} alt={icon.icon} />
-                    </div>
-                    <span className="text-[#F9FAFB] text-base">
-                      {icon.text}
-                    </span>
+        <div className=" col-end-12 col-span-5">
+        <p className="text-center font-thin text-xl text-white ">Frontend</p>
+          <div className="grid grid-cols-3 gap-4  border border-[#5B63D3]">
+            {frontendIcons.map((icon, index) => {
+              return (
+                <div
+                  key={index}
+                  className="flex w-12 md:w-24 my-2 flex-col items-center  py-2  bg-[#AEAEAB33] border border-[#5B63D3] rounded-md"
+                >
+                  <div>
+                    <Image src={icon.icon} alt={icon.icon} />
                   </div>
-                );
-              })}
-            </div>
-            <div className="flex flex-col scroll-container secondary ">
-              {frontendIcons.map((icon, index) => {
-                return (
-                  <div
-                    key={index}
-                    className="flex w-24 md:w-48 my-2 flex-col items-center  py-2  bg-[#AEAEAB33] border border-[#5B63D3] rounded-md"
-                  >
-                    <div>
-                      <Image src={icon.icon} alt={icon.icon} />
-                    </div>
-                    <span className="text-[#F9FAFB] text-base">
-                      {icon.text}
-                    </span>
-                  </div>
-                );
-              })}
-            </div>
+                  <span className="text-[#F9FAFB] text-base">{icon.text}</span>
+                </div>
+              );
+            })}
           </div>
         </div>
-        <div className=" relative">
-          <div className="flex flex-col ">
-            <div className="flex flex-col scroll-container primary ">
-              {frontendIcons.map((icon, index) => {
-                return (
-                  <div
-                    key={index}
-                    className="flex w-24 md:w-48 my-2 flex-col items-center  py-2  bg-[#AEAEAB33] border border-[#5B63D3] rounded-md"
-                  >
-                    <div>
-                      <Image src={icon.icon} alt={icon.icon} />
-                    </div>
-                    <span className="text-[#F9FAFB] text-base">
-                      {icon.text}
-                    </span>
+        <div className=" col-start-4 col-span-6 ">
+        <p className="text-center font-thin text-xl text-white ">Frontend</p>
+          <div className="grid grid-cols-3 gap-4  border border-[#5B63D3]">
+            {frontendIcons.map((icon, index) => {
+              return (
+                <div
+                  key={index}
+                  className="flex w-12 md:w-24 my-2 flex-col items-center  py-2  bg-[#AEAEAB33] border border-[#5B63D3] rounded-md"
+                >
+                  <div>
+                    <Image src={icon.icon} alt={icon.icon} />
                   </div>
-                );
-              })}
-            </div>
-            <div className="flex flex-col scroll-container secondary ">
-              {frontendIcons.map((icon, index) => {
-                return (
-                  <div
-                    key={index}
-                    className="flex w-24 md:w-48 my-2 flex-col items-center  py-2  bg-[#AEAEAB33] border border-[#5B63D3] rounded-md"
-                  >
-                    <div>
-                      <Image src={icon.icon} alt={icon.icon} />
-                    </div>
-                    <span className="text-[#F9FAFB] text-base">
-                      {icon.text}
-                    </span>
-                  </div>
-                );
-              })}
-            </div>
+                  <span className="text-[#F9FAFB] text-base">{icon.text}</span>
+                </div>
+              );
+            })}
           </div>
         </div>
       </div>
-
-      <style jsx>{`
-        .scroll-container {
-          display: flex;
-          white-space: nowrap;
-          position: absolute;
-          inset-inline-start: 0%;
-          inset-block-start: 0%;
-          block-size: inherit;
-          inline-size: inherit;
-          align-items: center;
-        }
-
-        .primary {
-          animation: primary 20s linear infinite;
-        }
-        .secondary {
-          animation: secondary 20s linear infinite;
-        }
-
-        @keyframes primary {
-          0% {
-            transform: translateY(0);
-          }
-          100% {
-            transform: translateY(-100%);
-          }
-        }
-        @keyframes secondary {
-          0% {
-            transform: translateY(100%);
-          }
-          100% {
-            transform: translateY(0);
-          }
-        }
-
-        /*@keyframes marquee {
-          0% {
-            transform: translateX(0);
-          }
-          100% {
-            transform: translateX(100%);
-           
-          }
-          
-        }
-
-        .animate-marquee {
-          animation: marquee 10s linear infinite;
-        }
-
-        .scroll-item {
-          inline-size: 100%; 
-          float: inline-start; 
-        }*/
-      `}</style>
     </div>
   );
 };
