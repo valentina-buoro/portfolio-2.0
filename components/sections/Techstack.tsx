@@ -11,7 +11,7 @@ import Express from "../../public/express.svg";
 import Sql from "../../public/sql.svg";
 import Python from "../../public/python.svg";
 import Postgres from "../../public/postgres.svg";
-import FastApi from "../../public/fastApi.svg";
+import FastApi from "../../public/fastapi.svg";
 import Flutter from "../../public/flutter.svg";
 import Dart from "../../public/dart.svg";
 const frontendIcons = [
