@@ -17,7 +17,7 @@ type Props = {
 
 const Blogs: React.FC<Props> = (props) => {
   return (
-         <div className="w-full h-screen flex flex-col bg-black px-20">
+         <div className="px-6 md:px-20 md:py-10 w-screen md:w-full items-center">
         
         <main>
           {props.feed.map((post) => (
