@@ -35,9 +35,9 @@ const Blog: React.FC<Props> = (props) => {
       <Divider/>
      <Projects projectFeed={props.projectFeed} />
      <Techstack/>
-     <Services/>
-     <Contact/>
+     <Services/> 
      <Blogs feed={props.feed} />
+     <Contact/>
     </Layout>
   );
 };

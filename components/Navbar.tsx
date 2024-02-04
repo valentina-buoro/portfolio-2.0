@@ -47,8 +47,8 @@ const socialRoutes = [
   },
   {
     icon: Recommendation,
-    label: "Recommendation",
-    href: "recommendation",
+    label: "Blog",
+    href: "blog",
   },
   {
     icon: Contact,
