@@ -50,7 +50,7 @@ const ProfileCard = () => {
         {socialRoutes.map((route, index) => {
           return (
             <span key={index} className="flex items-center ">
-              <Image src={route.icon} alt={route.icon} />
+              <Image src={route.icon} alt={route.icon}  />
             </span>
           );
         })}

@@ -1,9 +1,43 @@
 import React from "react";
 import MobileNavbar from "../MobileNavbar";
 
+import Github from "../../public/github.svg";
+import Twitter from "../../public/twitter.svg";
+import Linkedin from "../../public/linkedin.svg";
+import Email from "../../public/email.svg";
+import Image from "next/image";
+
+const socialRoutes = [
+  {
+    icon: Github,
+    label: "Dashboard",
+    href: "/",
+  },
+  {
+    icon: Twitter,
+    label: "Inventory",
+    label2: "List of Medicines",
+    href: "/inventory",
+    href2: "/list-of-medicines",
+    collapsible: true,
+  },
+  {
+    icon: Linkedin,
+    label: "Reports",
+    label2: "Sales Report",
+    href: "/reports",
+    href2: "/sales-report",
+  },
+  {
+    icon: Email,
+    label: "Configuration/settings",
+    href: "configure",
+  },
+];
 
 const Hero = () => {
-  const buttonStyle = "col-span-1 text-[9px] md:text-xs lg:text-base text-center font-semibold rounded-md bg-[#27232B] py-3 px-4 text-[#F9FAFB] hover:bg-[#F9FAFB] hover:text-[#27232B]"
+  const buttonStyle =
+    "col-span-1 text-[9px] md:text-xs lg:text-base text-center font-semibold rounded-md bg-[#27232B] py-3 px-4 text-[#F9FAFB] hover:bg-[#F9FAFB] hover:text-[#27232B]";
   return (
     <div className="container w-screen  md:w-full mx-auto ">
       {/*<div className="mask">
@@ -11,37 +45,56 @@ const Hero = () => {
   </div>*/}
 
       <div className="w-screen md:w-full background-image  p-6">
-        <MobileNavbar/>
+        <MobileNavbar />
         <div className="content linear flex flex-col items-center  ">
-          <h1 className="mt-16 md:mt-4 md:px-20 text-center font-bold text-3xl md:text-6xl ">Crafting Digital Experiences with Code: Explore My Portfolio!</h1>
-          <div className="sub-text py-4 md:pt-6 text-center">
+          <h1 className="mt-16 md:mt-4 md:px-20 text-center font-bold text-3xl md:text-6xl ">
+            Crafting Digital Experiences with Code: Explore My Portfolio!
+          </h1>
+          <div className="hidden md:block sub-text py-4 md:pt-6 text-center">
             <span>Excellent xyz</span>
+          </div>
+
+          <div className="flex gap-x-4 sub-text mt-4 py-4 px-7 border border-[#4D0071] rounded-xl">
+            {socialRoutes.map((route, index) => {
+              return (
+                <span key={index} className="flex items-center justify-around ">
+                  <Image src={route.icon} alt={route.icon} />
+                </span>
+              );
+            })}
           </div>
           <div className="hidden sub-text md:flex flex-row justify-center">
             <button className="text-center font-medium p-4 my-2 md:my-4 bg-gradient-to-r from-purple-900 to-purple-800 rounded-md">
-            <a href="https://www.linkedin.com/in/latoptop/" > View My Projects </a>
+              <a href="https://www.linkedin.com/in/latoptop/">
+                {" "}
+                View My Projects{" "}
+              </a>
             </button>
           </div>
-          <div className="py-10  flex flex-col md:flex-row md:justify-between gap-14 md:gap-10" id='about-me'>
+          <div
+            className="py-10  flex flex-col md:flex-row md:justify-between gap-14 md:gap-10"
+            id="about-me"
+          >
             <div className="text-white w-screen md:w-[30.8rem] text-left px-6 md:px-0 left">
               <p className="text-2xl font-bold mb-4">Get To Know Me</p>
               <i className=" text-sm md:text-base text-white/80">
                 {" "}
-                I'm your full-stack maestro, I turn your ideas into a symphony of code leveraging tools like React, Flutter, Nodejs, Tailwind for styling and databases such as
-                SQL and PostgreSQL, to create a seamless user experience.
-                I'm not just about aesthetics;I optimize for performance,
-                ensuring your app is as swift as a caffeinated developer. 
-                <br/>
-                <br/>
-                I bring a technical prowess that transforms ideas into scalable,
-                high-performance web solutions. Let's embark on a tech journey
-                where every line of code is a note in the melody of efficiency.
-                Your web kingdom deserves nothing less!
+                I'm your full-stack maestro, I turn your ideas into a symphony
+                of code leveraging tools like React, Flutter, Nodejs, Tailwind
+                for styling and databases such as SQL and PostgreSQL, to create
+                a seamless user experience. I'm not just about aesthetics;I
+                optimize for performance, ensuring your app is as swift as a
+                caffeinated developer.
+                <br />
+                <br />I bring a technical prowess that transforms ideas into
+                scalable, high-performance web solutions. Let's embark on a tech
+                journey where every line of code is a note in the melody of
+                efficiency. Your web kingdom deserves nothing less!
               </i>
             </div>
             <div className="right px-6 md:px-0 ">
               <div className="pt-5 grid grid-cols-3 gap-2">
-                <div className= {buttonStyle}>
+                <div className={buttonStyle}>
                   <span>Javascript</span>
                 </div>
                 <div className={buttonStyle}>
@@ -66,52 +119,49 @@ const Hero = () => {
                 </div>
               </div>
               <div className="pt-2 grid grid-cols-3 gap-2">
-                <div className= {buttonStyle}>
+                <div className={buttonStyle}>
                   <span>Javascript</span>
                 </div>
-                <div className= {buttonStyle}>
+                <div className={buttonStyle}>
                   <span>React</span>
                 </div>
-                <div className= {buttonStyle}>
+                <div className={buttonStyle}>
                   <span>Nodejs</span>
                 </div>
               </div>
               <div className="pt-2 grid grid-cols-4 gap-2">
-                <div className= {buttonStyle}>
+                <div className={buttonStyle}>
                   <span>Graphql</span>
                 </div>
-                <div className= {buttonStyle}>
+                <div className={buttonStyle}>
                   <span>SQL</span>
                 </div>
-                <div className= {buttonStyle}>
+                <div className={buttonStyle}>
                   <span>GSAP</span>
                 </div>
-                <div className= {buttonStyle}>
+                <div className={buttonStyle}>
                   <span>Zustand</span>
                 </div>
               </div>
               <div className="pt-2 grid grid-cols-3 gap-2">
-                <div className= {buttonStyle}>
+                <div className={buttonStyle}>
                   <span>Javascript</span>
                 </div>
-                <div className= {buttonStyle}>
+                <div className={buttonStyle}>
                   <span>React</span>
                 </div>
-                <div className= {buttonStyle}>
+                <div className={buttonStyle}>
                   <span>Nodejs</span>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        
       </div>
-
 
       <style jsx>{`
         .container {
           position: relative;
-          
         }
 
         .background-image {
@@ -121,7 +171,6 @@ const Hero = () => {
           color: white; /* Text color */
           background-color: black;
           width: 100%;
-          
         }
         .background-image::before {
           content: "";
@@ -141,9 +190,6 @@ const Hero = () => {
           position: relative;
           z-index: 1; /* Ensure text appears above the overlay */
         }
-
-        
-       
       `}</style>
 
       {/*<style jsx>{`
