@@ -3,8 +3,8 @@ import { PostProps } from "../types/types";
 
 const BlogCard: React.FC<{ post: PostProps }> = ({ post }) =>{
   return (
-    <div className="pt-3 grid grid-cols-4 gap-4 md:gap-6">
-      <Image src={post.src} alt="Careers" className="col-span-1" />
+    <div className="pt-3 grid grid-cols-4 gap-4 md:gap-6 ">
+      <Image src={post.src} alt="Careers" className="col-span-1" width={300} height={40} />
       <div className="col-span-2 items-start space-y-4 font-medium   tracking-tighter">
         <p className="text-xs md:text-base lg:text-2xl text-justify text-white lg:leading-6 md:leading-[28.8px] font-medium">
           {post.title}
