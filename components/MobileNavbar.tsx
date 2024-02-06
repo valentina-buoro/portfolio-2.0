@@ -35,7 +35,7 @@ const MobileNavbar: React.FC = () => {
 
   return (
     <nav className={color? "bg-[#4D0071]/40 z-30 h-12 w-11/12 fixed top-4 left-0 overflow-y-auto mx-4 py-4 px-0 rounded-2xl shadow-sm md:hidden": "bg-transparent z-30 h-12 w-11/12 fixed top-4 left-0 overflow-y-auto mx-4 py-4 px-0 rounded-2xl shadow-sm md:hidden"}>
-      <div className="flex justify-around items-center text-sm ">
+      <div className="flex justify-around items-center text-sm font-semibold ">
         <span className="li active:border-b-white">
           <a onClick={() => scrollToSection("projects")}>Projects</a>
         </span>

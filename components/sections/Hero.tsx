@@ -47,9 +47,13 @@ const Hero = () => {
       <div className="w-screen md:w-full background-image  p-6">
         <MobileNavbar />
         <div className="content linear flex flex-col items-center  ">
-          <h1 className="mt-16 md:mt-4 md:px-20 text-center font-bold text-3xl md:text-6xl ">
+          <h1 className="hidden md:block mt-16 md:mt-4 md:px-20 text-center font-bold text-3xl md:text-6xl ">
             Crafting Digital Experiences with Code: Explore My Portfolio!
           </h1>
+         <div className="md:hidden mt-20">
+         <p className="text-white font-bold text-2xl sub-text text-center">HELLO &#128075;, I'M VALENTINA</p>
+        <h1 className=" text-center">Software Developer</h1>
+         </div>
           <div className="hidden md:block sub-text py-4 md:pt-6 text-center">
             <span>Excellent xyz</span>
           </div>
@@ -80,16 +84,13 @@ const Hero = () => {
               <i className=" text-sm md:text-base text-white/80">
                 {" "}
                 I'm your full-stack maestro, I turn your ideas into a symphony
-                of code leveraging tools like React, Flutter, Nodejs, Tailwind
-                for styling and databases such as SQL and PostgreSQL, to create
-                a seamless user experience. I'm not just about aesthetics;I
+                of code leveraging tools like React, Flutter, Nodejs, Tailwind 
+                and databases such as SQL and PostgreSQL. I'm not just about aesthetics;I
                 optimize for performance, ensuring your app is as swift as a
                 caffeinated developer.
-                <br />
+             <br />
                 <br />I bring a technical prowess that transforms ideas into
-                scalable, high-performance web solutions. Let's embark on a tech
-                journey where every line of code is a note in the melody of
-                efficiency. Your web kingdom deserves nothing less!
+                scalable, high-performance web solutions.Let's embark on a tech journey where every line of code is a note in the melody of efficiency. 
               </i>
             </div>
             <div className="right px-6 md:px-0 ">
