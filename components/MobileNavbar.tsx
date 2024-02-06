@@ -13,7 +13,12 @@ const MobileNavbar: React.FC = () => {
             setColor(false)
         }
     }
-    window.addEventListener('scroll', changeColor)
+
+    React.useEffect(
+        ()=>{
+            window.addEventListener('scroll', changeColor)
+        }
+    )
 
 
   const [active, setActive] = React.useState(false);
@@ -29,19 +34,13 @@ const MobileNavbar: React.FC = () => {
   const activeRoute = pathname === "/tech-stack";
 
   return (
-    <nav className={color? "bg-[#4D0071]/40 z-30 h-12 w-11/12 fixed top-4 left-0 overflow-y-auto mx-4 py-4 px-0 rounded-2xl shadow-sm md:hidden": "bg-[#4D0071] z-30 h-12 w-11/12 fixed top-4 left-0 overflow-y-auto mx-4 py-4 px-0 rounded-2xl shadow-sm md:hidden"}>
+    <nav className={color? "bg-[#4D0071]/40 z-30 h-12 w-11/12 fixed top-4 left-0 overflow-y-auto mx-4 py-4 px-0 rounded-2xl shadow-sm md:hidden": "bg-transparent z-30 h-12 w-11/12 fixed top-4 left-0 overflow-y-auto mx-4 py-4 px-0 rounded-2xl shadow-sm md:hidden"}>
       <div className="flex justify-around items-center text-sm ">
-        <span className={`li`}>
-          <a onClick={() => scrollToSection("home")}>Home</a>
-        </span>
         <span className="li active:border-b-white">
           <a onClick={() => scrollToSection("projects")}>Projects</a>
         </span>
         <span className="li">
           <a onClick={() => scrollToSection("tech-stack")}>Tech Stack</a>
-        </span>
-        <span className="li">
-          <a onClick={() => scrollToSection("services")}>Services</a>
         </span>
         <span className="li">
           <a onClick={() => scrollToSection("blog")}>Blog</a>
