@@ -37,14 +37,13 @@ const frontendIcons = [
   },
 ];
 
-
 const backendIcons = [
   {
     icon: Node,
     text: "Nodejs",
   },
   {
-    icon:   Express,
+    icon: Express,
     text: "Express",
   },
   {
@@ -86,7 +85,6 @@ const mobileIcons = [
     icon: TailwindIcon,
     text: "Tailwind",
   },
- 
 ];
 
 const Techstack = () => {
@@ -95,14 +93,14 @@ const Techstack = () => {
       className="px-6 md:px-20 md:py-10 w-screen md:w-full items-center "
       id="tech-stack"
     >
-      <div className="text-center my-16 w-2/4 items-center mx-auto">
-        <p className="text-4xl font-semibold text-[#F9FAFB] ">Tech Stacks</p>
-        <div className="bg-white h-1  w-2/3  my-3" />
+      <div className="text-center my-16 w-2/4 items-center mx-auto relative">
+        <p className="text-2xl md:text-4xl font-semibold text-[#F9FAFB]">Tech Stacks</p>
+        <div className="bg-[#8a2be2] h-[3px] absolute w-[30%] md:left-[20%]" />
       </div>
       <div className="  grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-8">
         <div className=" md:col-start-1 md:col-span-6 ">
           <p className="text-center font-thin text-xl text-white ">Frontend</p>
-          <div className="grid grid-cols-3 gap-4 p-4 rounded-lg border border-purple-400" >
+          <div className="grid grid-cols-3 gap-4 p-4 rounded-lg border border-purple-400">
             {frontendIcons.map((icon, index) => {
               return (
                 <div
@@ -112,14 +110,16 @@ const Techstack = () => {
                   <div>
                     <Image src={icon.icon} alt={icon.icon} />
                   </div>
-                  <span className="text-[#F9FAFB] text-xs md:text-base">{icon.text}</span>
+                  <span className="text-[#F9FAFB] text-xs md:text-base">
+                    {icon.text}
+                  </span>
                 </div>
               );
             })}
           </div>
         </div>
         <div className=" md:col-end-13 md:col-span-6">
-        <p className="text-center font-thin text-xl text-white ">Backend</p>
+          <p className="text-center font-thin text-xl text-white ">Backend</p>
           <div className="grid grid-cols-3 gap-4 p-4 rounded-lg border border-purple-400">
             {backendIcons.map((icon, index) => {
               return (
@@ -130,14 +130,16 @@ const Techstack = () => {
                   <div>
                     <Image src={icon.icon} alt={icon.icon} />
                   </div>
-                  <span className="text-[#F9FAFB] text-xs md:text-base">{icon.text}</span>
+                  <span className="text-[#F9FAFB] text-xs md:text-base">
+                    {icon.text}
+                  </span>
                 </div>
               );
             })}
           </div>
         </div>
         <div className=" md:col-start-4 md:col-span-6 ">
-        <p className="text-center font-thin text-xl text-white ">Frontend</p>
+          <p className="text-center font-thin text-xl text-white ">Frontend</p>
           <div className="grid grid-cols-3 gap-4 p-4 rounded-lg border border-purple-400">
             {mobileIcons.map((icon, index) => {
               return (
@@ -148,13 +150,26 @@ const Techstack = () => {
                   <div>
                     <Image src={icon.icon} alt={icon.icon} />
                   </div>
-                  <span className="text-[#F9FAFB] text-xs md:text-base">{icon.text}</span>
+                  <span className="text-[#F9FAFB] text-xs md:text-base">
+                    {icon.text}
+                  </span>
                 </div>
               );
             })}
           </div>
         </div>
       </div>
+      <style jsx>{`
+         .title{
+          background: #8a2be2;
+          bottom: -2px;
+          content: "";
+          height: 3px;
+          left: 0;
+          position: absolute;
+          width: 30%;
+        }
+      `}</style>
     </div>
   );
 };

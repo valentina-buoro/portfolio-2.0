@@ -20,9 +20,9 @@ const Projects:  React.FC<Props> = (props) =>  {
     <div className="bg-[#18151B] px-6 md:px-20 md:py-10 w-screen md:w-full items-center" id='projects'>
       
 
-      <div className="text-center my-16 w-2/4 items-center mx-auto">
-        <p className="text-4xl font-semibold text-[#F9FAFB] ">Featured Projects</p>
-        <div className="bg-white h-1  w-2/3  my-3" />
+      <div className="text-center my-16 w-2/4 items-center mx-auto relative">
+        <p className="text-2xl md:text-4xl font-semibold text-[#F9FAFB] ">Featured Projects</p>
+        <div className="bg-[#8a2be2] h-[3px] absolute w-[30%] md:left-[10%]" />
       </div>
       {props.projectFeed.map((project) => (
             <div key={project.id} className="mb-20">
