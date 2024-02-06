@@ -1,4 +1,5 @@
 import React from "react";
+import MobileNavbar from "../MobileNavbar";
 
 
 const Hero = () => {
@@ -10,12 +11,13 @@ const Hero = () => {
   </div>*/}
 
       <div className="w-screen md:w-full background-image  p-6">
+        <MobileNavbar/>
         <div className="content linear flex flex-col items-center  ">
-          <h1 className="md:px-20 text-center font-bold text-3xl md:text-6xl ">Crafting Digital Experiences with Code: Explore My Portfolio!</h1>
+          <h1 className="mt-16 md:mt-4 md:px-20 text-center font-bold text-3xl md:text-6xl ">Crafting Digital Experiences with Code: Explore My Portfolio!</h1>
           <div className="sub-text py-4 md:pt-6 text-center">
             <span>Excellent xyz</span>
           </div>
-          <div className="sub-text flex flex-row justify-center">
+          <div className="hidden sub-text md:flex flex-row justify-center">
             <button className="text-center font-medium p-4 my-2 md:my-4 bg-gradient-to-r from-purple-900 to-purple-800 rounded-md">
             <a href="https://www.linkedin.com/in/latoptop/" > View My Projects </a>
             </button>
