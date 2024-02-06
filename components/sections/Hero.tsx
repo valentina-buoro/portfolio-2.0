@@ -54,7 +54,7 @@ const Hero = () => {
             <span>Excellent xyz</span>
           </div>
 
-          <div className="flex gap-x-4 sub-text mt-4 py-4 px-7 border border-[#4D0071] rounded-xl">
+          <div className="flex gap-x-4 sub-text mt-4 py-4 px-7 border border-[#4D0071] rounded-xl md:hidden">
             {socialRoutes.map((route, index) => {
               return (
                 <span key={index} className="flex items-center justify-around ">
