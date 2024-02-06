@@ -50,22 +50,29 @@ const Hero = () => {
           <h1 className="hidden md:block mt-16 md:mt-4 md:px-20 text-center font-bold text-3xl md:text-6xl ">
             Crafting Digital Experiences with Code: Explore My Portfolio!
           </h1>
-         <div className="md:hidden mt-20">
-         <p className="text-white font-bold text-2xl sub-text text-center">HELLO &#128075;, I'M VALENTINA</p>
-        <h1 className=" text-center">Software Developer</h1>
-         </div>
+          <div className="md:hidden mt-40">
+            <p className="text-white font-bold text-2xl sub-text text-center">
+              HELLO &#128075;, I'M VALENTINA
+            </p>
+            <h1 className=" text-center">Software Developer</h1>
+          </div>
           <div className="hidden md:block sub-text py-4 md:pt-6 text-center">
             <span>Excellent xyz</span>
           </div>
 
-          <div className="flex gap-x-4 sub-text mt-4 py-4 px-7 border border-[#4D0071] rounded-xl md:hidden">
-            {socialRoutes.map((route, index) => {
-              return (
-                <span key={index} className="flex items-center justify-around ">
-                  <Image src={route.icon} alt={route.icon} />
-                </span>
-              );
-            })}
+          <div className="flex flex-col  sub-text my-8  md:hidden">
+            <div className="flex gap-x-4  py-2 px-7">
+              {socialRoutes.map((route, index) => {
+                return (
+                  <span
+                    key={index}
+                    className="flex items-center justify-around "
+                  >
+                    <Image src={route.icon} alt={route.icon} />
+                  </span>
+                );
+              })}
+            </div>
           </div>
           <div className="hidden sub-text md:flex flex-row justify-center">
             <button className="text-center font-medium p-4 my-2 md:my-4 bg-gradient-to-r from-purple-900 to-purple-800 rounded-md">
@@ -84,13 +91,18 @@ const Hero = () => {
               <i className=" text-sm md:text-base text-white/80">
                 {" "}
                 I'm your full-stack maestro, I turn your ideas into a symphony
-                of code leveraging tools like React, Flutter, Nodejs, Tailwind 
-                and databases such as SQL and PostgreSQL. I'm not just about aesthetics;I
-                optimize for performance, ensuring your app is as swift as a
-                caffeinated developer.
-             <br />
-                <br />I bring a technical prowess that transforms ideas into
-                scalable, high-performance web solutions.Let's embark on a tech journey where every line of code is a note in the melody of efficiency. 
+                of code leveraging tools like React, Flutter, Nodejs, Tailwind
+                and databases such as SQL and PostgreSQL. I'm not just about
+                aesthetics;I optimize for performance, ensuring your app is as
+                swift as a caffeinated developer.
+                <br />
+                <br />
+                <span className="hidden md:block">
+                  I bring a technical prowess that transforms ideas into
+                  scalable, high-performance web solutions.Let's embark on a
+                  tech journey where every line of code is a note in the melody
+                  of efficiency.
+                </span>
               </i>
             </div>
             <div className="right px-6 md:px-0 ">
