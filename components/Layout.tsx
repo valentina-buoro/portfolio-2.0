@@ -7,7 +7,9 @@ import Footer from "./Footer";
 
 export const metadata: Metadata = {
   title: "Valentina Buoro",
-  description: "z",
+  description: "Valentina Buoro's portfolio website",
+  applicationName: "Valentina Buoro",
+  keywords: "Valentina Buoro, Portfolio, Web Developer, React Developer, Full Stack Developer, Frontend Developer ",
 };
 
 
