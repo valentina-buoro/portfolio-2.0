@@ -1,7 +1,7 @@
 import React from "react";
 import { GetStaticProps } from "next";
 import Layout from "../../components/Layout";
-import BackArrow from "../../public/backArrow.svg";
+import BackArrow from "../../public/backarrow.svg";
 import ProjectCard from "../../components/ProjectCard";
 import { ProjectProps } from "../../types/types";
 import { projectFeed } from "../../data/project-data";
