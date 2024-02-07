@@ -37,16 +37,15 @@ const ProjectCard: React.FC<{ project: ProjectProps }> = ({ project }) => {
         <div className="sub-text flex flex-row justify-between">
           <button
             className="text-center p-4 my-4 bg-[#4D0071] text-[#F9FAFB] rounded-md"
-            onClick={() =>
-              Router.push( `${project.deployed}`)
-            }
+            onClick={() => Router.push(`${project.deployed}`)}
           >
             <span> View Project </span>
           </button>
-          <button className="text-center p-4 my-4 bg-[#F9FAFB] text-[#4D0071] rounded-md"  onClick={() =>
-              Router.push( `${project.github}`)
-            }>
-           GitHub Repo 
+          <button
+            className="text-center p-4 my-4 bg-[#F9FAFB] text-[#4D0071] rounded-md"
+            onClick={() => Router.push(`${project.github}`)}
+          >
+            GitHub Repo
           </button>
         </div>
       </div>
@@ -54,19 +53,19 @@ const ProjectCard: React.FC<{ project: ProjectProps }> = ({ project }) => {
         <Image src={project.img} alt="Trust Ballot" className="w-full h-full" />
         <div className="card-content">
           <h2>{project.title}</h2>
-          <p className="hidden-text">Description</p>
+          <p className="hidden-text">{project.description}</p>
 
           <div className="sub-text flex flex-row justify-between md:hidden">
             <button
               className="text-center p-4 my-4 bg-[#4D0071] text-[#F9FAFB] rounded-md"
               onClick={() =>
-                Router.push("/project/[id]", `/project/${project.id}`)
+                Router.push( `${project.deployed}`)
               }
             >
               <span> View Project </span>
             </button>
-            <button className="text-center p-4 my-4 bg-[#F9FAFB] text-[#4D0071] rounded-md">
-              <a href="https://www.linkedin.com/in/latoptop/"> GitHub Repo </a>
+            <button className="text-center p-4 my-4 bg-[#F9FAFB] text-[#4D0071] rounded-md" onClick={() => Router.push(`${project.github}`)}>
+              
             </button>
           </div>
         </div>
