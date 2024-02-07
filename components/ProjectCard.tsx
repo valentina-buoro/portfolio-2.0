@@ -38,13 +38,15 @@ const ProjectCard: React.FC<{ project: ProjectProps }> = ({ project }) => {
           <button
             className="text-center p-4 my-4 bg-[#4D0071] text-[#F9FAFB] rounded-md"
             onClick={() =>
-              Router.push("/project/[id]", `/project/${project.id}`)
+              Router.push( `${project.deployed}`)
             }
           >
             <span> View Project </span>
           </button>
-          <button className="text-center p-4 my-4 bg-[#F9FAFB] text-[#4D0071] rounded-md">
-            <a href="https://www.linkedin.com/in/latoptop/"> GitHub Repo </a>
+          <button className="text-center p-4 my-4 bg-[#F9FAFB] text-[#4D0071] rounded-md"  onClick={() =>
+              Router.push( `${project.github}`)
+            }>
+           GitHub Repo 
           </button>
         </div>
       </div>

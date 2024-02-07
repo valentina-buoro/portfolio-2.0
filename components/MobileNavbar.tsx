@@ -61,7 +61,7 @@ const MobileNavbar: React.FC = () => {
         .li::after {
           content: "";
           display: block;
-          border-bottom: solid 3px #4d0071;
+          border-bottom: solid 3px #ffffff;
           padding-bottom: 1%;
           transform: scaleX(0);
           transition: transform 300ms ease-in-out;

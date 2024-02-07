@@ -20,5 +20,7 @@ export type PostProps = {
     img: string;
     title: string;
     description: string;
+    github: string;
+    deployed: string;
    
   }

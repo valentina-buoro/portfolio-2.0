@@ -5,27 +5,24 @@ import Linkedin from "../public/linkedin.svg";
 import Email from "../public/email.svg";
 import Profile from "../public/profileImg.png";
 import Image from "next/image";
+import Router from "next/router";
 
 const socialRoutes = [
   {
     icon: Github,
     label: "Dashboard",
-    href: "/",
+    href: "https://github.com/queen-x-vee",
   },
   {
     icon: Twitter,
     label: "Inventory",
-    label2: "List of Medicines",
-    href: "/inventory",
-    href2: "/list-of-medicines",
+    href: "https://twitter.com/valentinaBuoro",
     collapsible: true,
   },
   {
     icon: Linkedin,
     label: "Reports",
-    label2: "Sales Report",
-    href: "/reports",
-    href2: "/sales-report",
+    href: "https://www.linkedin.com/in/valentina-buoro/",
   },
   {
     icon: Email,
@@ -50,7 +47,9 @@ const ProfileCard = () => {
         {socialRoutes.map((route, index) => {
           return (
             <span key={index} className="flex items-center ">
-              <Image src={route.icon} alt={route.icon}  />
+              <Image src={route.icon} alt={route.icon}  onClick={() =>
+              Router.push( `${route.href}`)
+            } />
             </span>
           );
         })}
