@@ -16,20 +16,20 @@ const ProjectCard: React.FC<{ project: ProjectProps }> = ({ project }) => {
         <div>
           <div className="pt-2 grid grid-cols-2 gap-2">
             <div className="text-base font-semibold rounded-md bg-[#DADADA] py-3 px-4 text-[#18151B] text-center">
-              <span>Graphql</span>
+              <span>{project.firstTool}</span>
             </div>
             <div className="text-base font-semibold rounded-md bg-[#DADADA] py-3 px-4 text-[#18151B] text-center">
-              <span>SQL</span>
+              <span>{project.secondTool}</span>
             </div>
           </div>
           <div className="pt-2 grid grid-cols-4 gap-2">
             <div className="col-span-3 text-base font-semibold rounded-md bg-[#DADADA] py-3 px-4 text-[#18151B] text-center">
-              <span>Javascript</span>
+              <span>{project.thirdTool}</span>
             </div>
           </div>
           <div className="pt-2 grid grid-cols-3 gap-2">
             <div className="col-span-2 text-base font-semibold rounded-md bg-[#DADADA] py-3 px-4 text-[#18151B] text-center">
-              <span>Javascript</span>
+              <span>{project.fourthTool}</span>
             </div>
           </div>
         </div>

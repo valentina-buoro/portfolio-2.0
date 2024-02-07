@@ -23,10 +23,10 @@ const Blog: React.FC<Props> = (props) => {
     <Layout>
       <div className="w-full h-full flex flex-col px-20 bg-[#18151B]">
         <div className="flex flex-row justify-between items-center my-16">
-          <span className="flex text-white font-semibold text-base items-center gap-2">
+          <a className="flex text-white font-semibold text-base items-center gap-2" href='/'>
             <Image src={BackArrow} alt="logo" />
             Back
-          </span>
+          </a>
           <div className="text-center  w-2/4 items-center mx-auto relative">
             <p className="text-2xl md:text-4xl font-semibold text-[#F9FAFB] ">
               Featured Projects

@@ -22,5 +22,9 @@ export type PostProps = {
     description: string;
     github: string;
     deployed: string;
+    firstTool: string;
+    secondTool: string;
+    thirdTool: string;
+    fourthTool: string;
    
   }
