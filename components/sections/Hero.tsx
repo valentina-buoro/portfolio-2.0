@@ -1,6 +1,6 @@
 import React from "react";
 import MobileNavbar from "../MobileNavbar";
-
+import Arrow from "../../public/arrow.svg";
 import Github from "../../public/github.svg";
 import Twitter from "../../public/twitter.svg";
 import Linkedin from "../../public/linkedin.svg";
@@ -72,11 +72,12 @@ const Hero = () => {
             </div>
           </div>
           <div className="hidden sub-text md:flex flex-row justify-center">
-            <button className="text-center font-medium p-4 my-2 md:my-4 bg-gradient-to-r from-purple-900 to-purple-800 rounded-md">
-              <a href="https://www.linkedin.com/in/latoptop/">
+            <button className="flex items-center gap-2 font-medium p-4 my-2 md:my-4 bg-gradient-to-r from-purple-900 to-purple-800 rounded-md">
+            
                 {" "}
                 View My Projects{" "}
-              </a>
+                <Image src={Arrow} alt="arrow" />
+           
             </button>
           </div>
           <div
@@ -130,38 +131,38 @@ const Hero = () => {
               </div>
               <div className="pt-2 grid grid-cols-3 gap-2">
                 <div className={buttonStyle}>
-                  <span>Javascript</span>
+                  <span>Flutter</span>
                 </div>
                 <div className={buttonStyle}>
-                  <span>React</span>
+                  <span>Typescript</span>
                 </div>
                 <div className={buttonStyle}>
-                  <span>Nodejs</span>
+                  <span>CSS</span>
                 </div>
               </div>
               <div className="pt-2 grid grid-cols-4 gap-2">
                 <div className={buttonStyle}>
-                  <span>Graphql</span>
+                  <span>ShadCN</span>
                 </div>
                 <div className={buttonStyle}>
-                  <span>SQL</span>
+                  <span>SEO</span>
                 </div>
                 <div className={buttonStyle}>
-                  <span>GSAP</span>
+                  <span>GitHub</span>
                 </div>
                 <div className={buttonStyle}>
-                  <span>Zustand</span>
+                  <span>ReactNative</span>
                 </div>
               </div>
               <div className="pt-2 grid grid-cols-3 gap-2">
                 <div className={buttonStyle}>
-                  <span>Javascript</span>
+                  <span>Tailwind</span>
                 </div>
                 <div className={buttonStyle}>
-                  <span>React</span>
+                  <span>NextJS</span>
                 </div>
                 <div className={buttonStyle}>
-                  <span>Nodejs</span>
+                  <span>Postgresql</span>
                 </div>
               </div>
             </div>

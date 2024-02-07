@@ -1,4 +1,6 @@
 import React from "react";
+import Arrow from "../../public/arrow.svg";
+import Image from "next/image";
 import { GetStaticProps } from "next";
 import ProjectCard from "../ProjectCard";
 import { ProjectProps } from "../../types/types";
@@ -32,8 +34,9 @@ const Projects:  React.FC<Props> = (props) =>  {
      
 
       <div className="sub-text flex flex-row justify-center mt-20 mb-24">
-        <button className="text-center p-4 my-4 bg-[#4D0071] text-[#F9FAFB] rounded-md">
+        <button className="flex items-center justify-center gap-2 text-center p-4 my-4 bg-[#4D0071] text-[#F9FAFB] rounded-md">
           <a href="/projects"> See All Projects </a>
+          <Image src={Arrow} alt="arrow" />
         </button>
       </div>
       <hr className="lg:mt-24 mt-14 opacity-10" />
