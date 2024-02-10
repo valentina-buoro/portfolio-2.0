@@ -44,6 +44,7 @@ const Blogs: React.FC<Props> = (props) => {
           <Image src={Arrow} alt="arrow" />
         </button>
       </div>
+      <hr className="lg:mt-24 mt-14 opacity-10" />
     </div>
   );
 };

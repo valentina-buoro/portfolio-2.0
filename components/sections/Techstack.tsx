@@ -170,6 +170,7 @@ const Techstack = () => {
           width: 30%;
         }
       `}</style>
+      <hr className="lg:mt-24 mt-14 opacity-10" />
     </div>
   );
 };
