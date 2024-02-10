@@ -12,7 +12,7 @@ const BlogCard: React.FC<{ post: PostProps }> = ({ post }) =>{
         <p className="text-xs  font-normal md:text-base text-white/85 ">{post.content}</p>
       </div>
       <div className="col-span-1">
-            <button className=" text-xs md:text-base text-center w-full md:p-4 my-4 bg-[#4D0071] text-white rounded-md">
+            <button className=" text-xs md:text-base text-center w-full p-2 md:p-4 my-4 bg-[#4D0071] text-white rounded-md">
             <a href={post.url} > Read Article </a>
             </button>
           </div>
