@@ -18,13 +18,13 @@ const socialRoutes = [
     icon: Sun,
     label: "Dashboard",
   },
- /* {
+  {
     icon: Home,
     label: "Home",
     href: "/",
    
     collapsible: true,
-  },*/
+  },
   {
     icon: Person,
     label: "About me",

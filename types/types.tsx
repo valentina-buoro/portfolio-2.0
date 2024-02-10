@@ -2,6 +2,7 @@ export type PostProps = {
     id: string;
     src: string;
     title: string;
+    url: string;
     author: {
       name: string;
       email: string;
