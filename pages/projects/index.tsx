@@ -4,18 +4,18 @@ import Layout from "../../components/Layout";
 import BackArrow from "../../public/backarrow.svg";
 import ProjectCard from "../../components/ProjectCard";
 import { ProjectProps } from "../../types/types";
-import { projectFeed } from "../../data/project-data";
+import { mainProjectFeed } from "../../data/project-data";
 import Image from "next/image";
 
 export const getStaticProps: GetStaticProps = async () => {
   return {
-    props: { projectFeed },
+    props: { mainProjectFeed },
     revalidate: 10,
   };
 };
 
 type Props = {
-  projectFeed: ProjectProps[];
+  mainProjectFeed: ProjectProps[];
 };
 
 const Blog: React.FC<Props> = (props) => {
@@ -35,7 +35,7 @@ const Blog: React.FC<Props> = (props) => {
           </div>
         </div>
         <main>
-          {props.projectFeed.map((post, index) => (
+          {props.mainProjectFeed.map((post, index) => (
             <div key={index} className="mb-20">
               <ProjectCard project={post} />
             </div>
