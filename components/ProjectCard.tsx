@@ -50,22 +50,29 @@ const ProjectCard: React.FC<{ project: ProjectProps }> = ({ project }) => {
         </div>
       </div>
       <div className="w-[21rem] md:w-[34rem] object-contain card">
-        <Image src={project.img} alt="Trust Ballot" className="w-full h-full" />
-        <div className="card-content">
-          <h2>{project.title}</h2>
-          <p className="hidden-text">{project.description}</p>
+        <Image src={project.img} alt="Trust Ballot" className="w-full md:h-full" />
+        <div className="card-content hidden md:block">
+          <h2 className="font-bold text-base">{project.title}</h2>
+          <p className="hidden-text font-normal text-sm">
+            {project.description}
+          </p>
+        </div>
+        <div className="md:hidden p-4 ">
+          <h2 className="font-bold text-base text-white">{project.title}</h2>
+          <p className=" font-normal text-sm text-white/80" >{project.description}</p>
 
-          <div className="sub-text flex flex-row justify-between md:hidden">
+          <div className="flex flex-row justify-between ">
             <button
-              className="text-center p-4 my-4 bg-[#4D0071] text-[#F9FAFB] rounded-md"
-              onClick={() =>
-                Router.push( `${project.deployed}`)
-              }
+              className="text-center p-3 my-4 bg-[#4D0071] text-[#F9FAFB] text-sm rounded-md"
+              onClick={() => Router.push(`${project.deployed}`)}
             >
               <span> View Project </span>
             </button>
-            <button className="text-center p-4 my-4 bg-[#F9FAFB] text-[#4D0071] rounded-md" onClick={() => Router.push(`${project.github}`)}>
-              
+            <button
+              className="text-center p-3 my-4 bg-[#F9FAFB] text-[#4D0071] text-sm rounded-md"
+              onClick={() => Router.push(`${project.github}`)}
+            >
+              GitHub Repo
             </button>
           </div>
         </div>
