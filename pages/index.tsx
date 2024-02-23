@@ -15,6 +15,7 @@ import "slick-carousel/slick/slick-theme.css"
 import Divider from "../components/Divider";
 import Blogs from "../components/sections/Blog";
 
+
 export const getStaticProps: GetStaticProps = async () => {
   return {
     props: { projectFeed, feed },
@@ -38,6 +39,7 @@ const Blog: React.FC<Props> = (props) => {
      <Services/> 
      <Blogs feed={props.feed} />
      <Contact/>
+     
     </Layout>
   );
 };

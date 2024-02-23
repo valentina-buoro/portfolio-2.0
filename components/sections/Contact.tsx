@@ -1,29 +1,11 @@
 import React, { useState } from "react";
+import { useForm, ValidationError } from "@formspree/react";
 
 const Contact = () => {
-  const [formData, setFormData] = useState({
-    from: "",
-    subject: "",
-    text: "",
-  });
-
-  async function create() {
-    // Clear form inputs
-    setFormData({
-      from: "",
-      subject: "",
-      text: "",
-    });
+  const [state, handleSubmit] = useForm("mdoqzkgz");
+  if (state.succeeded) {
+    return <div className="bg-[#4D0071] text-3xl text-center p-4 lg:p-8 text-white italic">Your message has been delivered!</div>;
   }
-
-  const handleChange = (event) => {
-    const { name, value } = event.target;
-    // Update form data with the new value
-    setFormData({
-      ...formData,
-      [name]: value,
-    });
-  };
 
   return (
     <div
@@ -48,56 +30,50 @@ const Contact = () => {
         </div>
 
         <form
-          className=" h-[32rem] bg-[#EAEAEB] p-4 md:p-10 flex-1 flex flex-col gap-4 md:gap-8 items-center rounded-b-lg md:rounded-e-lg"
-          onSubmit={create}
+          className=" h-[32rem] bg-[#EAEAEB] py-4 md:p-10 flex-1 flex flex-col gap-4 md:gap-8 items-center justify-around rounded-b-lg md:rounded-e-lg"
+          onSubmit={handleSubmit}
         >
-          <div>
-            <label className="text-xs md:text-base font-medium">
+          <div className="w-11/12">
+            <label className="text-xs md:text-base font-normal">
               Your email address
             </label>
-            <div className="flex justify-between p-4 lg:w-[440px] w-full  rounded-lg bg-white">
+            <div className="flex justify-between p-2 md:p-4 w-full rounded  md:rounded-lg bg-white">
               <input
-                className="bg-inherit w-11/12 border-none outline-none"
+                className="bg-inherit w-11/12 border-none outline-none placeholder:text-xs placeholder:md:text-sm"
                 placeholder="Email"
-                id="from"
-                name="from"
-                value={formData.from}
-                onChange={handleChange}
+                id="email"
+                type="email"
+                name="email"
+              />
+              <ValidationError
+                prefix="Email"
+                field="email"
+                errors={state.errors}
               />
             </div>
           </div>
-          <div>
-            <label className="text-xs md:text-base font-medium">
-              Email Subject
-            </label>
-            <div className="flex justify-between p-4 lg:w-[440px] w-full  rounded-lg bg-white">
-              <input
-                className="bg-inherit w-11/12 border-none outline-none"
-                placeholder="Subject"
-                id="subject"
-                name="subject"
-                value={formData.subject}
-                onChange={handleChange}
-              />
-            </div>
-          </div>
-          <div>
-            <label className="text-xs md:text-base font-medium">
+          
+          <div className="w-11/12">
+            <label className="text-xs md:text-base font-normal">
               Your Message
             </label>
-            <div className="flex justify-between p-4 lg:w-[440px] w-full h-24 rounded-lg bg-white">
+            <div className="flex justify-between p-2 md:p-4  w-full h-32 rounded md:rounded-lg bg-white">
               <textarea
-                className="bg-inherit w-11/12 border-none outline-none h-full"
-                placeholder="Message"
-                id="text"
-                name="text"
-                value={formData.text}
-                onChange={handleChange}
+                className="bg-inherit w-11/12 border-none outline-none h-full placeholder:text-xs placeholder:md:text-sm"
+                placeholder="Message..."
+                id="message"
+                name="message"
+              />
+              <ValidationError
+                prefix="Message"
+                field="message"
+                errors={state.errors}
               />
             </div>
           </div>
           <button
             type="submit"
+            disabled={state.submitting}
             className="bg-[#4D0071] text-white px-4 py-2 rounded-lg"
           >
             Send Message
