@@ -21,7 +21,7 @@ const Layout: React.FC<Props> = (props) => (
   
     <div className=" h-full flex  bg-black m-0 p-0">
       <Profilebar />
-      <main className="md:ml-[21rem] md:mr-[4.375rem] w-fit  bg-[#18151B] ">
+      <main className="md:ml-[21rem] md:mr-[4.375rem] w-fit  bg-[#18151B] relative overflow-x-hidden ">
         {/* Main content goes here */}
         {props.children}
         {/* Add your main content */}
@@ -48,6 +48,7 @@ const Layout: React.FC<Props> = (props) => (
           Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
           "Segoe UI Symbol";
         background:black;
+      
       }
 
       button {
