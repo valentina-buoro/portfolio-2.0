@@ -139,7 +139,7 @@ const Techstack = () => {
           </div>
         </div>
         <div className=" md:col-start-4 md:col-span-6 ">
-          <p className="text-center font-thin text-xl text-white ">Frontend</p>
+          <p className="text-center font-thin text-xl text-white ">Mobile</p>
           <div className="grid grid-cols-3 gap-4 p-4 rounded-lg border border-purple-400">
             {mobileIcons.map((icon, index) => {
               return (
