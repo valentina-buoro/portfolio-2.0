@@ -28,8 +28,8 @@ const socialRoutes = [
   },
   {
     icon: Email,
-    label: "Configuration/settings",
-    href: "configure",
+    label: "Email",
+    href: "mailto:valentinabuoro4@gmail.com",
   },
 ];
 
