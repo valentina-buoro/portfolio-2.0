@@ -7,6 +7,7 @@ import Twitter from "../../public/twitter.svg";
 import Linkedin from "../../public/linkedin.svg";
 import Email from "../../public/email.svg";
 import Image from "next/image";
+import Router from "next/router";
 
 const socialRoutes = [
   {
@@ -88,7 +89,9 @@ const Hero = () => {
                     key={index}
                     className="flex items-center justify-around "
                   >
-                    <Image src={route.icon} alt={route.icon} />
+                    <Image src={route.icon} alt={route.icon}  onClick={() =>
+              Router.push( `${route.href}`)
+            }/>
                   </span>
                 );
               })}
