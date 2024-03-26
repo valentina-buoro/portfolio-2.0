@@ -13,7 +13,7 @@ const socialRoutes = [
   {
     icon: Github,
     label: "Dashboard",
-    href: "https://github.com/queen-x-vee",
+    href: "https://github.com/valentina-buoro",
   },
   {
     icon: Twitter,
