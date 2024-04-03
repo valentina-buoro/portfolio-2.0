@@ -13,7 +13,7 @@ const Profilebar: React.FC = () => {
       <div className="w-full bg-[#F9FAFB] h-[1px] my-10 opacity-40" />
     <TextAnimation/>
    
-            <button className="flex justify-center items-center gap-2 text-lg text-white font-semibold p-4  bg-gradient-to-r from-purple-900 via-purple-500 to-purple-900 rounded-md" onClick={()=>window.open('https://docs.google.com/document/d/1pB_wfi5CNM_R9XoKa2v2M8uJATjUzeQG0xSjrD368CY/edit?usp=sharing') }>
+            <button className="flex justify-center items-center gap-2 text-lg text-white font-semibold p-4  bg-gradient-to-r from-purple-900 via-purple-500 to-purple-900 rounded-md" onClick={()=>window.open('https://docs.google.com/document/d/1pB_wfi5CNM_R9XoKa2v2M8uJATjUzeQG0xSjrD368CY/edit?usp=sharing')} data-aos="fade-up">
            View My Resume
 
              <Image src={Arrow} alt="arrow" />

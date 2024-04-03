@@ -19,7 +19,7 @@ type Props = {
 
 const Projects:  React.FC<Props> = (props) =>  {
   return (
-    <div className="bg-[#18151B] px-6 md:px-20 md:py-10 w-screen md:w-full items-center" id='projects'>
+    <div className="bg-[#18151B] px-6 md:px-20 md:py-10 w-screen md:w-full items-center" id='projects' data-aos="zoom-in">
       
 
       <div className="text-center my-16 w-2/4 items-center mx-auto relative">
@@ -27,7 +27,7 @@ const Projects:  React.FC<Props> = (props) =>  {
         <div className="bg-[#8a2be2] h-[3px] absolute w-[30%] md:left-[10%]" />
       </div>
       {props.projectFeed.map((project) => (
-            <div key={project.id} className="mb-20">
+            <div key={project.id} className="mb-20" data-aos="fade-up-left">
               <ProjectCard project={project} />
             </div>
           ))}

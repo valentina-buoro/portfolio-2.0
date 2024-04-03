@@ -91,7 +91,7 @@ const Techstack = () => {
   return (
     <div
       className="px-6 md:px-20 md:py-10 w-screen md:w-full items-center "
-      id="tech-stack"
+      id="tech-stack" data-aos="zoom-in-up"
     >
       <div className="text-center my-16 w-2/4 items-center mx-auto relative">
         <p className="text-2xl md:text-4xl font-semibold text-[#F9FAFB]">Tech Stacks</p>

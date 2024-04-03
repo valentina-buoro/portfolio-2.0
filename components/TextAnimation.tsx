@@ -4,7 +4,7 @@ const TextAnimation = () => {
   const textStyles = 'block font-semibold leading-6 bg-clip-text text-transparent bg-gradient-to-r from-purple-900 via-purple-300 to-purple-700'
   return (
     <>
-      <div className="flex flex-col  ">
+      <div className="flex flex-col " >
         <div className="container border  border-purple-400 rounded-md shadow-md">
           <div className="vertical-text text-center">
             <span className= {textStyles}>

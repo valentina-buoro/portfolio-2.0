@@ -50,7 +50,7 @@ const Hero = () => {
             Crafting Digital Experiences with Code: Explore My Portfolio!
           </h1>
           <div className="md:hidden mt-40">
-            <p className="text-white font-bold text-2xl sub-text text-center">
+            <p className="text-white font-bold text-2xl sub-text text-center" data-aos="fade-right" data-aos-duration="2000">
               HELLO &#128075;, I'M VALENTINA
             </p>
             
@@ -110,7 +110,7 @@ const Hero = () => {
             className="py-10  flex flex-col md:flex-row md:justify-between gap-14 md:gap-10"
             id="about-me"
           >
-            <div className="text-white w-screen md:w-[30.8rem] text-left px-6 md:px-0 left">
+            <div className="text-white w-screen md:w-[30.8rem] text-left px-6 md:px-0 left" data-aos="fade-right">
               <p className="text-2xl font-bold mb-4">Get To Know Me</p>
               <i className=" text-sm md:text-base text-white/80">
                 {" "}
@@ -129,7 +129,7 @@ const Hero = () => {
                 </span>
               </i>
             </div>
-            <div className="right px-6 md:px-0 ">
+            <div className="right px-6 md:px-0 " data-aos="fade-left">
               <div className="pt-5 grid grid-cols-3 gap-2">
                 <div className={buttonStyle}>
                   <span>Javascript</span>

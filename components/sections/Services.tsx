@@ -46,7 +46,7 @@ const servicesRoutes = [
 ]
 const Services = () => {
   return (
-    <section className="px-6 md:px-20 md:py-10 flex flex-col justify-center w-screen md:w-full" id='services'>
+    <section className="px-6 md:px-20 md:py-10 flex flex-col justify-center w-screen md:w-full" id='services' data-aos="flip-left">
 
 <div className="text-center my-16 w-2/4 items-center mx-auto relative">
         <p className="text-2xl md:text-4xl font-semibold text-[#F9FAFB] ">Services</p>

@@ -33,7 +33,7 @@ const socialRoutes = [
 
 const ProfileCard = () => {
   return (
-    <div className="w-[16.875rem] h-[15.813rem] bg-[#27222B] mt-[1.938rem] py-8 shadow-lg flex flex-col justify-center items-center rounded-lg">
+    <div className="w-[16.875rem] h-[15.813rem] bg-[#27222B] mt-[1.938rem] py-8 shadow-lg flex flex-col justify-center items-center rounded-lg" data-aos="flip-left">
       <div className="flex items-center justify-center w-24">
         <Image src={Profile} alt="profile" className="w-full" />
       </div>
