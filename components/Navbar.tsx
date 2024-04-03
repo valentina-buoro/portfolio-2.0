@@ -21,7 +21,7 @@ const socialRoutes = [
   {
     icon: Home,
     label: "Home",
-    href: "/",
+    href: "home",
    
     collapsible: true,
   },

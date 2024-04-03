@@ -43,7 +43,7 @@ const Hero = () => {
         <Image className="into-img" src={HeroImg} alt="latoptop" />
   </div>*/}
 
-      <div className="w-screen md:w-full background-image  p-6">
+      <div className="w-screen md:w-full background-image  p-6" id='home'>
         <MobileNavbar />
         <div className="content linear flex flex-col items-center  ">
           <h1 className="hidden md:block mt-16 md:mt-4 md:px-20 text-center font-bold text-3xl md:text-6xl ">
