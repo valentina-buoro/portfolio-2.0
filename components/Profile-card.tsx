@@ -3,7 +3,7 @@ import Github from "../public/github.svg";
 import Twitter from "../public/twitter.svg";
 import Linkedin from "../public/linkedin.svg";
 import Email from "../public/email.svg";
-import Profile from "../public/profileImg.png";
+import Profile from "../public/profile_pic.jpeg";
 import Image from "next/image";
 import Router from "next/router";
 
@@ -34,8 +34,8 @@ const socialRoutes = [
 const ProfileCard = () => {
   return (
     <div className="w-[16.875rem] h-[15.813rem] bg-[#27222B] mt-[1.938rem] py-8 shadow-lg flex flex-col justify-center items-center rounded-lg" data-aos="flip-left">
-      <div className="flex items-center justify-center w-24">
-        <Image src={Profile} alt="profile" className="w-full" />
+      <div className="flex items-center justify-center w-28">
+        <Image src={Profile} alt="profile" className="rounded-sm  " />
       </div>
       <div className="font-medium text-lg leading-[1.35rem] text-white">
         Valentina Buoro
