@@ -1,6 +1,7 @@
 import React, { ReactNode } from "react";
 import type { Metadata } from "next"
 
+
 import Profilebar from "./Profilebar";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
@@ -8,8 +9,11 @@ import Footer from "./Footer";
 export const metadata: Metadata = {
   title: "Valentina Buoro",
   description: "Valentina Buoro's portfolio website",
+  icons: {
+    icon: '/public/favicon.ico', // /public path
+  },
   applicationName: "Valentina Buoro",
-  keywords: "Valentina Buoro, Portfolio, Web Developer, React Developer, Full Stack Developer, Frontend Developer ",
+  keywords: "Valentina Buoro, Software Developer, Portfolio, Web Developer, React Developer, Full Stack Developer, Frontend Developer ",
 };
 
 

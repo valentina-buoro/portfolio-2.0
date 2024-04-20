@@ -23,7 +23,7 @@ const App = ({ Component, pageProps }: AppProps) => {
   useEffect(() => {
     const delay = setTimeout(() => {
       setLoading(false);
-    }, 1000);
+    }, 1200);
 
     return () => clearTimeout(delay);
   }, []);
