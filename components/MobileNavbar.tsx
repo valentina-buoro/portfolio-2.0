@@ -39,6 +39,9 @@ const MobileNavbar: React.FC = () => {
       <span className="li">
           <a onClick={() => scrollToSection("about-me")}>About Me</a>
         </span>
+        <span className="li">
+          <a onClick={() => scrollToSection("blog")}>Blog</a>
+        </span>
         <span className="li active:border-b-white">
           <a onClick={() => scrollToSection("projects")}>Projects</a>
         </span>
@@ -46,9 +49,7 @@ const MobileNavbar: React.FC = () => {
         <span className="li">
           <a onClick={() => scrollToSection("tech-stack")}>Tech Stack</a>
         </span>
-        <span className="li">
-          <a onClick={() => scrollToSection("blog")}>Blog</a>
-        </span>
+        
         
       </div>
       <style jsx>{`

@@ -23,6 +23,7 @@ const Contact = () => {
           <div>
             <p className="text-white text-2xl md:text-5xl font-semibold">
               Have an Awesome Project Idea?
+              <br />
               <span className="text-[#9C00E5]">Let’s Discuss</span>{" "}
             </p>
           </div>

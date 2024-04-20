@@ -34,10 +34,11 @@ const Blog: React.FC<Props> = (props) => {
     <Layout>
       <Hero/>
       <Divider/>
+      <Blogs feed={props.feed} />
      <Projects projectFeed={props.projectFeed} />
      <Techstack/>
      <Services/> 
-     <Blogs feed={props.feed} />
+
      <Contact/>
      
     </Layout>

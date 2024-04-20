@@ -31,6 +31,11 @@ const socialRoutes = [
     href: "about-me",
   },
   {
+    icon: Recommendation,
+    label: "Blog",
+    href: "blog",
+  },
+  {
     icon: Projects,
     label: "Projects",
     href: "projects",
@@ -45,11 +50,7 @@ const socialRoutes = [
     label: "Services",
     href: "services",
   },
-  {
-    icon: Recommendation,
-    label: "Blog",
-    href: "blog",
-  },
+
   {
     icon: Contact,
     label: "Contact",
