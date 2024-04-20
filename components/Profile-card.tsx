@@ -37,9 +37,9 @@ const ProfileCard = () => {
       <div className="flex items-center justify-center w-28">
         <Image src={Profile} alt="profile" className="rounded-sm  " />
       </div>
-      <div className="font-medium text-lg leading-[1.35rem] text-white">
+      <h1 className="font-medium text-lg leading-[1.35rem] text-white">
         Valentina Buoro
-      </div>
+      </h1>
       <div className="text-[#8C8C8E] font-medium leading-[1.35rem] text-sm my-4">
         Software Developer
       </div>

@@ -46,13 +46,13 @@ const Hero = () => {
       <div className="w-screen md:w-full background-image  p-6" id='home'>
         <MobileNavbar />
         <div className="content linear flex flex-col items-center  ">
-          <h1 className="hidden md:block mt-16 md:mt-4 md:px-20 text-center font-bold text-3xl md:text-6xl ">
+          <p className="title-text hidden md:block mt-16 md:mt-4 md:px-20 text-center font-bold text-3xl md:text-6xl ">
             Crafting Digital Experiences with Code: Explore My Portfolio!
-          </h1>
+          </p>
           <div className="md:hidden mt-40">
-            <p className="text-white font-bold text-2xl sub-text text-center" data-aos="fade-right" data-aos-duration="2000">
-              HELLO &#128075;, I'M VALENTINA
-            </p>
+            <h1 className="text-white font-bold text-2xl sub-text text-center" data-aos="fade-right" data-aos-duration="2000">
+              HELLO &#128075;, I'M VALENTINA BUORO
+            </h1>
             
           </div>
           <div className=" sub-text flex  py-4 md:pt-6 text-center">
@@ -220,7 +220,7 @@ const Hero = () => {
         }
 
         /* Style for the text or content */
-        .background-image h1,
+        .background-image .title-text,
         .background-image .left,
         .background-image .right,
         .background-image .sub-text {
