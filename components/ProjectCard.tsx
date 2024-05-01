@@ -10,7 +10,7 @@ const ProjectCard: React.FC<{ project: ProjectProps }> = ({ project }) => {
         <div>
           <p className="text-white text-3xl font-semibold">{project.title}</p>
           <p className="text-white">
-            Visualize your entire blockchain paragliding pilots.
+            
           </p>
         </div>
         <div>
