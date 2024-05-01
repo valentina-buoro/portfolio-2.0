@@ -32,7 +32,7 @@ const ProjectCard: React.FC<{ project: ProjectProps }> = ({ project }) => {
           </div>
         </div>
 
-        <div className="sub-text flex flex-row justify-between">
+        <div className="sub-text flex flex-row gap-5 justify-between">
           <button
             className="text-center p-4 my-4 bg-[#4D0071] text-[#F9FAFB] rounded-md"
             onClick={() => Router.push(`${project.deployed}`)}

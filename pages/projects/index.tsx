@@ -21,7 +21,7 @@ type Props = {
 const Blog: React.FC<Props> = (props) => {
   return (
     <Layout>
-      <div className="w-full h-full flex flex-col px-20 bg-[#18151B]">
+      <div className="w-full h-full flex flex-col px-6 md:px-20 bg-[#18151B]">
         <div className="flex flex-row justify-between items-center my-16">
           <a className="flex text-white font-semibold text-base items-center gap-2" href='/'>
             <Image src={BackArrow} alt="logo" />
