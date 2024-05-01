@@ -8,10 +8,8 @@ const ProjectCard: React.FC<{ project: ProjectProps }> = ({ project }) => {
     <div className="flex justify-center md:flex ">
       <div className="hidden bg-[#231F29] p-12 md:flex flex-col justify-around">
         <div>
-          <p className="text-white text-3xl font-semibold">{project.title}</p>
-          <p className="text-white">
-            
-          </p>
+          <p className="text-white text-3xl font-semibold mb-5">{project.title}</p>
+        
         </div>
         <div>
           <div className="pt-2 grid grid-cols-2 gap-2">
