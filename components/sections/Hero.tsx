@@ -114,19 +114,15 @@ const Hero = () => {
               <p className="text-2xl font-bold mb-4">Get To Know Me</p>
               <i className=" text-sm md:text-base text-white/80">
                 {" "}
-                I'm your full-stack maestro, I turn your ideas into a symphony
-                of code leveraging tools like React, Flutter, Nodejs, Tailwind
-                and databases such as SQL and PostgreSQL. I'm not just about
-                aesthetics;I optimize for performance, ensuring your app is as
-                swift as a caffeinated developer.
+                Hi!👋🏼 My name is Valentina. I'm a language-agnostic software developer with more than 2 years experience building scalable and responsive software applications 👩🏽‍💻. I am passionate about delivering high-quality solutions, leveraging the most suitable languages and frameworks to meet specific engineering needs effectively.
+
                 <br />
                 <br />
                 <span className="hidden md:block">
-                  I bring a technical prowess that transforms ideas into
-                  scalable, high-performance web solutions.Let's embark on a
-                  tech journey where every line of code is a note in the melody
-                  of efficiency.
+                 
+                  
                 </span>
+                <p>Outside of work, I enjoy reading fiction, with a particular fondness for sci-fi and Greek mythology⚡️🧝🏾‍♀️.</p>
               </i>
             </div>
             <div className="right px-6 md:px-0 " data-aos="fade-left">
