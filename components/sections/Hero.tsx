@@ -77,7 +77,7 @@ const Hero = () => {
               {"</>"}
             </span>
           </div>
-          <button className=" flex sub-text md:hidden justify-center items-center gap-2 text-base text-white font-semibold p-3 my-3  bg-[#4D0071]" onClick={()=>window.open('https://docs.google.com/document/d/1pB_wfi5CNM_R9XoKa2v2M8uJATjUzeQG0xSjrD368CY/edit?usp=sharing') }>
+          <button className=" flex sub-text md:hidden justify-center items-center gap-2 text-base text-white font-semibold p-3 my-3  bg-[#4D0071]" onClick={()=>window.open('https://docs.google.com/document/d/1SkkC9rYNVfYdToJ3HoDlOJj-eY8nW9jHFG5SKeg9x28/edit?usp=sharing') }>
             My Resume
             
             </button>
@@ -99,7 +99,8 @@ const Hero = () => {
             </div>
           </div>
           <div className="hidden sub-text md:flex flex-row justify-center">
-            <button className="flex items-center gap-2 font-medium p-4 my-2 md:my-4 bg-[#4D0071] rounded-md">
+            <button className="flex items-center gap-2 font-medium p-4 my-2 md:my-4 bg-[#4D0071] rounded-md"
+             onClick={() => Router.push(`/projects`)}>
             
                 {" "}
                 View My Projects{" "}
