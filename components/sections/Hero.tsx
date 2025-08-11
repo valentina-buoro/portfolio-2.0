@@ -63,6 +63,7 @@ const Hero = () => {
                   options={{
                     strings: [
                       "Software Developer",
+                      "I build Machine Learning Models",
                       "I Develop Web Applications",
                       "User Friendly and Scalable",
                       "I Develop Mobile Applications",
@@ -114,7 +115,7 @@ const Hero = () => {
               <p className="text-2xl font-bold mb-4">Get To Know Me</p>
               <i className=" text-sm md:text-base text-white/80">
                 {" "}
-                Hi!👋🏼 My name is Valentina. I'm a language-agnostic software developer with more than 2 years experience building scalable and responsive software applications 👩🏽‍💻. I am passionate about delivering high-quality solutions, leveraging the most suitable languages and frameworks to meet specific engineering needs effectively.
+                Hi!👋🏼 My name is Valentina. I'm a language-agnostic software developer and machine learning engineer with more than 2 years experience building scalable and responsive software applications 👩🏽‍💻. I am passionate about delivering high-quality solutions, leveraging the most suitable languages and frameworks to meet specific engineering needs effectively.
 
                 <br />
                 <br />
@@ -128,13 +129,13 @@ const Hero = () => {
             <div className="right px-6 md:px-0 " data-aos="fade-left">
               <div className="pt-5 grid grid-cols-3 gap-2">
                 <div className={buttonStyle}>
-                  <span>Javascript</span>
+                  <span>Python</span>
                 </div>
                 <div className={buttonStyle}>
-                  <span>React</span>
+                  <span>LangChain</span>
                 </div>
                 <div className={buttonStyle}>
-                  <span>Nodejs</span>
+                  <span>FastAPI</span>
                 </div>
               </div>
               <div className="pt-2 grid grid-cols-4 gap-2">
@@ -145,21 +146,21 @@ const Hero = () => {
                   <span>SQL</span>
                 </div>
                 <div className={buttonStyle}>
-                  <span>GSAP</span>
+                  <span>React</span>
                 </div>
                 <div className={buttonStyle}>
-                  <span>Zustand</span>
+                  <span>Pytorch</span>
                 </div>
               </div>
               <div className="pt-2 grid grid-cols-3 gap-2">
                 <div className={buttonStyle}>
-                  <span>Flutter</span>
+                  <span>Javascript</span>
                 </div>
                 <div className={buttonStyle}>
                   <span>Typescript</span>
                 </div>
                 <div className={buttonStyle}>
-                  <span>CSS</span>
+                  <span>Tensorflow</span>
                 </div>
               </div>
               <div className="pt-2 grid grid-cols-4 gap-2">
@@ -167,7 +168,7 @@ const Hero = () => {
                   <span>ShadCN</span>
                 </div>
                 <div className={buttonStyle}>
-                  <span>SEO</span>
+                  <span>HuggingFace</span>
                 </div>
                 <div className={buttonStyle}>
                   <span>GitHub</span>
