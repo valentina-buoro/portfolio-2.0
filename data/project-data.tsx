@@ -11,7 +11,7 @@ export const projectFeed = [
     title: "AI Book Recommender",
     description: "AI Book Recommender developed using Fine-tunned LLM with custom dataset. Tools used include HuggingFace, LangChain and FastAPI",
     github: "https://github.com/valentina-buoro/AI-book-recommender",
-    deployed: "https://github.com/valentina-buoro/AI-book-recommender",
+    deployed: "https://ai-book-recommender-production.up.railway.app/",
     firstTool: "LLM",
     secondTool: "FastPI",
     thirdTool: "HuggingFace",
